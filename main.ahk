@@ -1,5 +1,5 @@
-#Include, utils\Variables.ahk
-#Include, utils\General.ahk
+#Include, modules\variables.ahk
+#Include, modules\functions.ahk
 #MaxThreadsPerHotkey 2
 #SingleInstance Force
 #IfWinActive RuneScape
@@ -17,15 +17,29 @@
     ;    LeftClick()
     ; Return
 
-    ; Hybridding Mage + Melee
-    ; F21::
-    ;     Cast("brid_helm")
-    ;     Cast("brid_body")
-    ;     Cast("brid_legs")
-    ;     Cast("brid_boots")
-    ;     Cast("brid_2h")
-    ;     Cast("brid_prayer")
-    ; Return
+    ; Hybridding Mage
+    F21::
+        Cast("brid_start_key")
+        WaitTick(600)
+        Cast("magic_brid_helm")
+        Cast("magic_brid_body")
+        Cast("magic_brid_legs")
+        Cast("magic_brid_boots")
+        Cast("magic_brid_prayer")
+        Equip("magic_brid_2h")
+    Return
+    
+    ; Hybridding Melee
+    F22::
+        Cast("brid_start_key")
+        WaitTick(600)
+        Cast("melee_brid_helm")
+        Cast("melee_brid_body")
+        Cast("melee_brid_legs")
+        Cast("melee_brid_boots")
+        Cast("melee_brid_prayer")
+        Cast("melee_brid_2h")
+    Return
 
     ; Sbs + disrupt
     +C::
