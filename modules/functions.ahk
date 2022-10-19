@@ -36,7 +36,6 @@ Equip(Keybind) {
 Cast(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
-    Sleep, % ran(1,2)
     Send {%keybind% up}
     Sleep, % ran(1,2)
 }
