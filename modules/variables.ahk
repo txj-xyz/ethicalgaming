@@ -2,20 +2,20 @@
 brid_start_key := "F8"
 
 ; Hybridding Melee
-melee_brid_helm := "Home"
-melee_brid_body := "Insert"
-melee_brid_legs := "Delete"
-melee_brid_2h := "F4"
-melee_brid_boots := "F3"
-melee_brid_prayer := "c"
+melee_brid_helm := "q"
+melee_brid_body := "w"
+melee_brid_legs := "e"
+melee_brid_2h := "t"
+melee_brid_boots := "z"
+melee_brid_prayer := "r"
 
 ; Hybridding Magic
-magic_brid_helm := "Home"
-magic_brid_body := "Insert"
-magic_brid_legs := "Delete"
-magic_brid_2h := "F4"
-magic_brid_boots := "F3"
-magic_brid_prayer := "c"
+magic_brid_helm := "a"
+magic_brid_body := "s"
+magic_brid_legs := "d"
+magic_brid_2h := "g"
+magic_brid_boots := "x"
+magic_brid_prayer := "f"
 
 ; Items
 mainhand := "k"
