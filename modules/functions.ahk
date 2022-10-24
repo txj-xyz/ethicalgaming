@@ -29,7 +29,15 @@ WaitTick(amount) {
 ; Helper function to perform a keybind press without keydown
 Equip(Keybind) {
     keybind := %Keybind%
-    Send %keybind%
+    Send {%keybind% down}
+    Send {%keybind% up}
+}
+
+; Helper function to perform a keybind press without keydown
+Use(Keybind) {
+    keybind := %Keybind%
+    Send {%keybind% down}
+    Send {%keybind% up}
 }
 
 ; Helper function to send a keybind up and down, i.e. casting an ability or auto attack.
@@ -37,5 +45,4 @@ Cast(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
     Send {%keybind% up}
-    Sleep, % ran(1,2)
 }
