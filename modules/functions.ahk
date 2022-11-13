@@ -46,3 +46,4 @@ Cast(Keybind) {
     Send {%keybind% down}
     Send {%keybind% up}
 }
+

@@ -35,3 +35,6 @@ broken_sbs := "m"
 heal_other := "B"
 hammer := "b"
 eof_spec := "F"
+
+; Misc
+space_bar := "Space"

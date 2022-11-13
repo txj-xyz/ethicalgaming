@@ -21,7 +21,7 @@
         Equip("brid_helm")
         Equip("brid_body")
         Equip("brid_legs")
-        Equip("brid_boots")
+        ; Equip("brid_boots")
         Cast("brid_prayer")
         Equip("brid_2h")
     Return
@@ -48,7 +48,7 @@
     Return
 
     ; target cycle + smoke cloud
-    `::
-        Use("tc")
-        Use("smoke_cloud")
-    Return
+    ; `::
+    ;     Use("tc")
+    ;     Use("smoke_cloud")
+    ; Return
