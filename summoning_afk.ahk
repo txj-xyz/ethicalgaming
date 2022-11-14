@@ -16,7 +16,8 @@ Shop.Obby := Object("X1", 1377, "Y1", 534, "X2", 1377, "Y2", 534)
 Shop.Depo := Object("X1", 1281, "Y1", 527, "X2", 1281, "Y2", 527)
 Shop.PouchFirst := Object("X1", 1085, "Y1", 539, "X2", 1085, "Y2", 539)
 Shop.PouchSecond := Object("X1", 1070, "Y1", 685, "X2", 1070, "Y2", 685)
-
+Shop.ShopSlot1 := Object("X1", 1158, "Y1", 787, "X2", 1158, "Y2", 787)
+Shop.ShopSlot2 := Object("X1", 1142, "Y1", 994, "X2", 1142, "Y2", 994)
 ; Function helper for clicking coords
 CoordLClick(Area){
    Random, areaX, Shop[Area].X1, Shop[Area].X2
@@ -31,33 +32,37 @@ CoordRClick(Area){
 }
 
 Q::
-    ; Trade
-    CoordLClick("Trade")
-    Sleep, 1800
-    CoordLClick("Item")
-    Sleep, 1100
-    CoordLClick("Max")        
-    Sleep, 600
-    CoordLClick("Buy")
-    Sleep, 1100
-    SendInput, {Escape down}
-    Sleep, ran(1, 10)
-    SendInput, {Escape up}
-    Sleep, ran(100, 200)
-    CoordLClick("Obby")
-    Sleep, 1100
-    SendInput, {Space down}
-    Sleep, ran(1, 10)
-    SendInput, {Space up}
-    Sleep, 3500
-    CoordLClick("Depo")
-    Sleep, 1200
-    CoordRClick("PouchFirst")
-    Sleep, 600
-    CoordLClick("PouchSecond")
-    SendInput, {Escape down}
-    Sleep, ran(1, 10)
-    SendInput, {Escape up}
+    Loop, {
+      Sleep, 600
+      ; Trade
+      CoordLClick("Trade")
+      Sleep, 1200
+      ; CoordLClick("Item")
+      ; Sleep, 1100
+      CoordRClick("ShopSlot1")
+      Sleep, 200
+      CoordLClick("ShopSlot2")
+      ; CoordLClick("Max")
+      ; CoordLClick("Buy")  
+      SendInput, {Escape down}
+      Sleep, ran(1, 10)
+      SendInput, {Escape up}
+      Sleep, ran(100, 200)
+      CoordLClick("Obby")
+      Sleep, 1100
+      SendInput, {Space down}
+      Sleep, ran(1, 10)
+      SendInput, {Space up}
+      Sleep, 3500
+      CoordLClick("Depo")
+      Sleep, 1200
+      CoordRClick("PouchFirst")
+      Sleep, 600
+      CoordLClick("PouchSecond")
+      SendInput, {Escape down}
+      Sleep, ran(1, 10)
+      SendInput, {Escape up}
+    }
 return
 
 ; Escape to terminate the app.
