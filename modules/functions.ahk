@@ -47,3 +47,16 @@ Cast(Keybind) {
     Send {%keybind% up}
 }
 
+; Function helper for Left clicking coords
+CoordLClick(Area){
+   Random, areaX, Shop[Area].X1, Shop[Area].X2
+   Random, areaY, Shop[Area].Y1, Shop[Area].Y2
+   ControlClick, x%areaX% y%areaY%, RuneScape,,L,,
+}
+
+; Function helper for Right clicking coords
+CoordRClick(Area){
+   Random, areaX, Shop[Area].X1, Shop[Area].X2
+   Random, areaY, Shop[Area].Y1, Shop[Area].Y2
+   ControlClick, x%areaX% y%areaY%, RuneScape,,R,,
+}

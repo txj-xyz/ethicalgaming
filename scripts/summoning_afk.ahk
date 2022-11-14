@@ -18,18 +18,6 @@ Shop.PouchFirst := Object("X1", 1085, "Y1", 539, "X2", 1085, "Y2", 539)
 Shop.PouchSecond := Object("X1", 1070, "Y1", 685, "X2", 1070, "Y2", 685)
 Shop.ShopSlot1 := Object("X1", 1158, "Y1", 787, "X2", 1158, "Y2", 787)
 Shop.ShopSlot2 := Object("X1", 1142, "Y1", 994, "X2", 1142, "Y2", 994)
-; Function helper for clicking coords
-CoordLClick(Area){
-   Random, areaX, Shop[Area].X1, Shop[Area].X2
-   Random, areaY, Shop[Area].Y1, Shop[Area].Y2
-   ControlClick, x%areaX% y%areaY%, RuneScape,,L,,
-}
-
-CoordRClick(Area){
-   Random, areaX, Shop[Area].X1, Shop[Area].X2
-   Random, areaY, Shop[Area].Y1, Shop[Area].Y2
-   ControlClick, x%areaX% y%areaY%, RuneScape,,R,,
-}
 
 Q::
     Loop, {
