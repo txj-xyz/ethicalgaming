@@ -1,5 +1,5 @@
-#Include, modules\variables.ahk
-#Include, modules\functions.ahk
+#Include, ..\modules\variables.ahk
+#Include, ..\modules\functions.ahk
 SendMode Input
 #MaxThreadsPerHotkey 2
 #SingleInstance Force
