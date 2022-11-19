@@ -1,6 +1,6 @@
 #Include, ..\modules\variables.ahk
-#Include, ..\modules\functions.ahk
 #Include, ..\modules\coordinates.ahk
+#Include, ..\modules\functions.ahk
 SendMode Input
 #MaxThreadsPerHotkey 2
 #SingleInstance Force
@@ -12,6 +12,7 @@ F1::
     F2 = Extreme Prayers
     F3 = Summoning Taverly
     F4 = Vuln Bombs
+    F5 = AFK Arch Glacor
     LAlt = Reload Script
   )
 return
@@ -88,6 +89,15 @@ F4:: ; vuln bombs
     sleep, % ran(10, 100)
     ControlSend,,{Space up},RuneScape
     sleep, % ran(14000, 16000)
+  }
+return
+
+F5:: ; AFK Arch Glacor
+  Loop {
+    ControlSend,,{Space down},RuneScape
+    sleep, % ran(10, 100)
+    ControlSend,,{Space up},RuneScape
+    sleep, % ran(15000, 45000)
   }
 return
 

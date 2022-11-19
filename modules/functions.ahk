@@ -60,3 +60,10 @@ CoordRClick(Area){
    Random, areaY, Shop[Area].Y1, Shop[Area].Y2
    ControlClick, x%areaX% y%areaY%, RuneScape,,R,,
 }
+
+; Function helper for Left clicking coords
+CoordClick(Area){
+   Random, areaX, Coords[Area].X1, Coords[Area].X2
+   Random, areaY, Coords[Area].Y1, Coords[Area].Y2
+   ControlClick, x%areaX% y%areaY%, RuneScape,,L,,
+}
