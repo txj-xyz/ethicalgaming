@@ -26,11 +26,20 @@ WaitTick(amount) {
     Sleep, amount
 }
 
+; Wait a Global Cooldown
+WaitGCD() {
+    Sleep, 1800
+}
+
+; Wait one game Tick
+WaitOneTick() {
+    Sleep, 605
+}
+
 ; Helper function to perform a keybind press without keydown
 Equip(Keybind) {
     keybind := %Keybind%
-    Send {%keybind% down}
-    Send {%keybind% up}
+    Send %keybind%
 }
 
 ; Helper function to perform a keybind press without keydown
@@ -43,8 +52,7 @@ Use(Keybind) {
 ; Helper function to send a keybind up and down, i.e. casting an ability or auto attack.
 Cast(Keybind) {
     keybind := %Keybind%
-    Send {%keybind% down}
-    Send {%keybind% up}
+    Send %keybind%
 }
 
 ; Function helper for Left clicking coords

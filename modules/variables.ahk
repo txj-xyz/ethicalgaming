@@ -12,13 +12,15 @@ brid_prayer := "Delete"
 ; Items
 mainhand := "k"
 offhand := "l"
+shield := "`;"
 bd_mainhand := "["
 bd_offhand := "]"
+fsoa := "\\"
+weapon_special := "b"
 
 ; Raksha BC Lani
 bd_boots := "^c"
 lani_spear := "^v"
-fsoa := "^v"
 
 ; Abilities
 bladed_dive := "W"
@@ -35,6 +37,13 @@ broken_sbs := "m"
 heal_other := "B"
 hammer := "b"
 eof_spec := "F"
+natty := "N"
+wrack := "d"
+impact := "z"
+anticipate := "`!f"
+freedom := "`!a"
+prep := "`!w"
+tsunami := "S"
 
 ; Misc
 space_bar := "Space"
