@@ -20,16 +20,16 @@ SendMode Input
     
     ; Hybridding
     F22::
-        Equip("brid_helm")
-        Equip("brid_body")
-        Equip("brid_legs")
+        HybridCast("brid_helm")
+        HybridCast("brid_body")
+        HybridCast("brid_legs")
         ; Equip("brid_boots")
-        Cast("brid_prayer")
-        Equip("brid_2h")
+        HybridCast("brid_prayer")
+        HybridCast("brid_2h")
     Return
 
 
-    ; Aod4 prebuild
+    ; ;Aod4 prebuild
     ; F10::
     ;     Cast("natty")
     ;     WaitGCD()
@@ -81,7 +81,19 @@ SendMode Input
     Return
 
     ; target cycle + smoke cloud
-    ; `::
-    ;     Use("tc")
-    ;     Use("smoke_cloud")
+    ; F13::
+    ;     Equip("bd_mainhand")
+    ;     Equip("bd_offhand")
+    ;     Cast("bladed_dive")
+    ;     LeftClick()
     ; Return
+
+    ; Pause Hotkey
+    F9::
+        Suspend
+        If A_IsSuspended {
+            TrayTip, "Boss Macros", Macros Deactivated, 5, 1
+        } else {
+            TrayTip, "Boss Macros", Macros Activated, 5, 1
+        }
+    Return

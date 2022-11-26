@@ -42,10 +42,10 @@ Equip(Keybind) {
     Send %keybind%
 }
 
-; Helper function to perform a keybind press without keydown
-Use(Keybind) {
+HybridCast(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
+    sleep, ran(1,2)
     Send {%keybind% up}
 }
 
