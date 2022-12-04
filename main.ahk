@@ -6,87 +6,63 @@ SendMode Input
 #IfWinActive RuneScape
     Menu, Tray, Icon, %A_ScriptDir%\icons\icon.ico
     
-    ; Raksha Specific BD Pools
-    F24::
-        Equip("bd_boots")
-        Equip("lani_spear")
+    ; Mouse Bottom Left
+    F23::
+        HybridCast("brid_boots")
+        HybridCast("brid_2h")
     Return
 
-    ; Right Click -> Left Click.
-    F23::
-       RightClick()
-       LeftClick()
+    ; Mouse Bottom Right
+    ; TC -> Ingen -> Hammer -> BD -> Click
+    F24::
+        RagoHammerClimb()
     Return
     
-    ; Hybridding
+    ; Mouse Bottom Middle
     F22::
         HybridCast("brid_helm")
         HybridCast("brid_body")
         HybridCast("brid_legs")
-        ; Equip("brid_boots")
         HybridCast("brid_prayer")
         HybridCast("brid_2h")
     Return
 
 
-    ; ;Aod4 prebuild
+    ; Vorago 
+    ; Escape -> BD -> LeftClick()
+    ; CapsLock::
+    ;     VoragoEscapeBD()
+    ; Return
+
+
+    ; AOD
+    ; Stall Omni
+    ; CapsLock::
+    ;     StallOmni()
+    ; Return
+
+    ; AOD
     ; F10::
-    ;     Cast("natty")
-    ;     WaitGCD()
-    ;     Cast("gconc")
-    ;     WaitGCD()
-    ;     Cast("wrack")
-    ;     WaitGCD()
-    ;     Cast("impact")
-    ;     WaitGCD()
-    ;     Cast("anticipate")
-    ;     WaitGCD()
-    ;     Cast("sunshine")
-    ;     WaitGCD()
-    ;     Equip("mainhand")
-    ;     Equip("shield")
-    ;     WaitOneTick()
-    ;     Cast("prep")
-    ;     WaitGCD()
-    ;     Cast("tsunami")
-    ;     WaitGCD()
-    ;     Equip("fsoa")
-    ;     WaitGCD()
-    ;     Cast("weapon_special")
-    ;     WaitGCD()
-    ;     Equip("mainhand")
-    ;     Equip("offhand")
-    ;     Cast("gconc")
+    ;     AOD4PrebuildP0()
     ; Return
 
     ; Sbs + disrupt
     +C::
-        Cast("sbs")
-        sleep, % ran(1,2)
-        Cast("disruption_shield")
+        Cast("sbs", ran(1,2))
+        Cast("disruption_shield", ran(1,2))
     Return
 
     ; sbs + veng
     +V::
-        Cast("sbs")
-        sleep, % ran(1,2)
-        Cast("veng")
+        Cast("sbs", ran(1,2))
+        Cast("veng", ran(1,2))
     Return
 
     ; sbs + heal other
     +B::
-        Cast("sbs")
-        sleep, % ran(1,2)
-        Cast("heal_other")
+        Cast("sbs", ran(1,2))
+        Cast("heal_other", ran(1,2))
     Return
-
-    ; target cycle + smoke cloud
-    ; F13::
-    ;     Equip("bd_mainhand")
-    ;     Equip("bd_offhand")
-    ;     Cast("bladed_dive")
-    ;     LeftClick()
-    ; Return
 
     ; Pause Hotkey
     F9::
@@ -96,4 +72,8 @@ SendMode Input
         } else {
             TrayTip, "Boss Macros", Macros Activated, 5, 1
         }
+    Return
+
+    Reload Script
+    F11::Reload
     Return

@@ -71,7 +71,7 @@ Options: (White space separated)
 }
 
 ; Right click + hold to select area.
-Rbutton::
+Q::
     coordinates := SelectArea()
     ; TrayTip, Coordinates, Coordinates Copied to Clipboard, 20, 1
     TrayTip, Coordinates Copied to Clipboard, %coordinates%, 20, 1

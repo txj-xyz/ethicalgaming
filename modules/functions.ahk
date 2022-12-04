@@ -8,7 +8,6 @@ ran(min,max)
 ; Helper function to perform a left click.
 LeftClick() {
     Send {Click down}
-    Sleep, % ran(1,2)
     Send {Click up}
     Sleep, % ran(1,2)
 }
@@ -37,9 +36,10 @@ WaitOneTick() {
 }
 
 ; Helper function to perform a keybind press without keydown
-Equip(Keybind) {
+Equip(Keybind, EnableWait := 0) {
     keybind := %Keybind%
     Send %keybind%
+    Sleep, %EnableWait%
 }
 
 HybridCast(Keybind) {
@@ -50,9 +50,10 @@ HybridCast(Keybind) {
 }
 
 ; Helper function to send a keybind up and down, i.e. casting an ability or auto attack.
-Cast(Keybind) {
+Cast(Keybind, Wait := 1800) {
     keybind := %Keybind%
     Send %keybind%
+    Sleep, %Wait%
 }
 
 ; Function helper for Left clicking coords
@@ -70,8 +71,71 @@ CoordRClick(Area){
 }
 
 ; Function helper for Left clicking coords
-CoordClick(Area){
+CoordClick(Area, InputType){
    Random, areaX, Coords[Area].X1, Coords[Area].X2
    Random, areaY, Coords[Area].Y1, Coords[Area].Y2
-   ControlClick, x%areaX% y%areaY%, RuneScape,,L,,
+   ControlClick, x%areaX% y%areaY%, RuneScape,,%InputType%,,
+}
+
+; TC -> Ingen -> Hammer -> BD - LeftClick()
+RagoHammerClimb(){
+    Send, {``}
+    Sleep, 30
+    Send, {F6}
+    Sleep, 30
+    Send, {b}
+    Sleep, 30
+    Send, {W}
+    Sleep, 30
+    LeftClick()
+}
+
+; AOD4 prebuild
+AOD4PrebuildP0(){
+    Cast("natty")
+    Cast("gconc")
+    Cast("wrack")
+    Cast("impact")
+    Cast("anticipate")
+    Cast("sunshine")
+    Cast("freedom")
+    Equip("mainhand")
+    Equip("shield", 600)
+    Cast("prep")
+    Cast("tsunami")
+    Equip("fsoa", 600)
+    Cast("weapon_special")
+    Equip("mainhand", 30)
+    Equip("offhand", 30)
+    Cast("gconc")
+    Send, {F3}
+    Sleep, 30
+    Send, {F4}
+    Sleep, 30
+    Send, {e}
+    Sleep, 600
+    Send, {F3}
+    Sleep, 30
+    Send, {F4}
+}
+
+; Escape -> BD -> LeftClick()
+VoragoEscapeBD(){
+    Cast("mv_escape",30)
+    Cast("bladed_dive",30)
+    LeftClick()
+}
+
+; MH + OH
+StallOmni(){
+    Cast("mainhand",30)
+    Cast("bd_offhand",30)
+}
+
+; MH + OH -> BD -> LeftClick()
+BladedDive(){
+    Equip("bd_mainhand")
+    Equip("bd_offhand")
+    Cast("bladed_dive")
+    LeftClick()
 }

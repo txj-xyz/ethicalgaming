@@ -2,7 +2,8 @@
 
 global Coords := Object()
 Coords.Bank := Object("X1", 1177, "Y1", 577, "X2", 1177, "Y2", 577)
-
+Coords.Exsang := Object("X1", 1010, "Y1", 1415, "X2", 1010, "Y2", 1415)
+Coords.Incite := Object("X1", 1050, "Y1", 1415, "X2", 1050, "Y2", 1415)
 
 ; Summoning Coords for ControlClick
 global Shop := Object()
@@ -16,3 +17,5 @@ Shop.PouchFirst := Object("X1", 1085, "Y1", 539, "X2", 1085, "Y2", 539)
 Shop.PouchSecond := Object("X1", 1070, "Y1", 685, "X2", 1070, "Y2", 685)
 Shop.ShopSlot1 := Object("X1", 1158, "Y1", 787, "X2", 1158, "Y2", 787)
 Shop.ShopSlot2 := Object("X1", 1142, "Y1", 994, "X2", 1142, "Y2", 994)
+
+

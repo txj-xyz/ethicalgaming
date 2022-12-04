@@ -9,6 +9,11 @@ brid_2h := "F4"
 brid_boots := "F3"
 brid_prayer := "Delete"
 
+; AOD4 Specific
+aod_ammo := "F3"
+aod_wep := "F4"
+grico := "e"
+
 ; Items
 mainhand := "k"
 offhand := "l"
@@ -24,6 +29,8 @@ lani_spear := "^v"
 
 ; Abilities
 bladed_dive := "W"
+surge := "Q"
+mv_escape := "E"
 sunshine := "g"
 apot := "F7"
 ingen := "F8"

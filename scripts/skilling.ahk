@@ -7,20 +7,20 @@ SendMode Input
 
 F1::
   MsgBox,
-  (
-    F1 = Help Dialog
-    F2 = Extreme Prayers
-    F3 = Summoning Taverly
-    F4 = Vuln Bombs
-    F5 = AFK Arch Glacor
-    LAlt = Reload Script
-  )
+(
+F1 = Help Dialog
+F2 = Extreme Prayers
+F3 = Summoning Taverly
+F4 = Vuln Bombs
+F5 = AFK Arch Glacor
+LAlt = Reload Script
+)
 return
 
 F2:: ; Extreme Prayers
 Loop {
     sleep, % ran(10, 100)
-    CoordClick("Bank") ; click bank
+    ; CoordClick("Bank") ; click bank
     sleep, % ran(1200, 4501)
     ControlSend,,{2 down},RuneScape ;load preset
     sleep, % ran(10, 100)
@@ -75,7 +75,7 @@ return
 F4:: ; vuln bombs
   Loop {
     sleep, % ran(10, 100)
-    CoordClick("Bank") ; click bank
+    CoordClick("Bank", "L") ; click bank
     sleep, % ran(1023, 1908)
     ControlSend,,{2 down},RuneScape ;load preset
     sleep, % ran(10, 100)
