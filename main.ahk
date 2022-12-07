@@ -1,18 +1,19 @@
-#Include, modules\variables.ahk
-#Include, modules\functions.ahk
+#Include, components\variables.ahk
+#Include, components\functions.ahk
+
 #MaxThreadsPerHotkey 2
 #SingleInstance Force
 SendMode Input
 #IfWinActive RuneScape
-    Menu, Tray, Icon, %A_ScriptDir%\icons\icon.ico
+Menu, Tray, Icon, %A_ScriptDir%\icons\icon.ico
     
-    ; Mouse Bottom Left
+    ; Razer Naga -> Bottom Left Key
     F23::
-        HybridCast("brid_boots")
-        HybridCast("brid_2h")
+        Hybrid("brid_boots")
+        Hybrid("brid_2h")
     Return
 
-    ; Mouse Bottom Right
+    ; Razer Naga -> Bottom Right Key
     ; TC -> Ingen -> Hammer -> BD -> Click
     F24::
         RagoHammerClimb()
@@ -20,60 +21,29 @@ SendMode Input
     
     ; Mouse Bottom Middle
     F22::
-        HybridCast("brid_helm")
-        HybridCast("brid_body")
-        HybridCast("brid_legs")
-        HybridCast("brid_prayer")
-        HybridCast("brid_2h")
+        Hybrid("brid_helm")
+        Hybrid("brid_body")
+        Hybrid("brid_legs")
+        Hybrid("brid_prayer")
+        Hybrid("brid_2h")
     Return
 
-
-    ; Vorago 
-    ; Escape -> BD -> LeftClick()
-    ; CapsLock::
-    ;     VoragoEscapeBD()
-    ; Return
-
-
-    ; AOD
-    ; Stall Omni
-    ; CapsLock::
-    ;     StallOmni()
-    ; Return
-
-    ; AOD
-    ; F10::
-    ;     AOD4PrebuildP0()
-    ; Return
-
     ; Sbs + disrupt
-    +C::
-        Cast("sbs", ran(1,2))
-        Cast("disruption_shield", ran(1,2))
+    +C::SBSDisrupt()
     Return
 
     ; sbs + veng
-    +V::
-        Cast("sbs", ran(1,2))
-        Cast("veng", ran(1,2))
+    +V::SBSVeng()
     Return
 
     ; sbs + heal other
-    +B::
-        Cast("sbs", ran(1,2))
-        Cast("heal_other", ran(1,2))
+    +B::SBSHealOther()
     Return
 
     ; Pause Hotkey
-    F9::
-        Suspend
-        If A_IsSuspended {
-            TrayTip, "Boss Macros", Macros Deactivated, 5, 1
-        } else {
-            TrayTip, "Boss Macros", Macros Activated, 5, 1
-        }
+    F9::PauseScript()
     Return
 
-    Reload Script
+    ;Reload Script
     F11::Reload
     Return

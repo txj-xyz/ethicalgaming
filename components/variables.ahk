@@ -29,7 +29,7 @@ lani_spear := "^v"
 
 ; Abilities
 bladed_dive := "W"
-surge := "Q"
+mv_surge := "Q"
 mv_escape := "E"
 sunshine := "g"
 apot := "F7"

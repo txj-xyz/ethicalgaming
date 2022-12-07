@@ -15,7 +15,6 @@ LeftClick() {
 ; Helper function to perform a right click.
 RightClick() {
     Send {Click down Right}
-    Sleep, % ran(1,2)
     Send {Click up Right}
     Sleep, % ran(1,2)
 }
@@ -27,12 +26,12 @@ WaitTick(amount) {
 
 ; Wait a Global Cooldown
 WaitGCD() {
-    Sleep, 1800
+    Sleep, ran(1800,1805)
 }
 
 ; Wait one game Tick
 WaitOneTick() {
-    Sleep, 605
+    Sleep, ran(600,605)
 }
 
 ; Helper function to perform a keybind press without keydown
@@ -42,7 +41,7 @@ Equip(Keybind, EnableWait := 0) {
     Sleep, %EnableWait%
 }
 
-HybridCast(Keybind) {
+Hybrid(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
     sleep, ran(1,2)
@@ -54,20 +53,6 @@ Cast(Keybind, Wait := 1800) {
     keybind := %Keybind%
     Send %keybind%
     Sleep, %Wait%
-}
-
-; Function helper for Left clicking coords
-CoordLClick(Area){
-   Random, areaX, Shop[Area].X1, Shop[Area].X2
-   Random, areaY, Shop[Area].Y1, Shop[Area].Y2
-   ControlClick, x%areaX% y%areaY%, RuneScape,,L,,
-}
-
-; Function helper for Right clicking coords
-CoordRClick(Area){
-   Random, areaX, Shop[Area].X1, Shop[Area].X2
-   Random, areaY, Shop[Area].Y1, Shop[Area].Y2
-   ControlClick, x%areaX% y%areaY%, RuneScape,,R,,
 }
 
 ; Function helper for Left clicking coords
@@ -120,7 +105,7 @@ AOD4PrebuildP0(){
 }
 
 ; Escape -> BD -> LeftClick()
-VoragoEscapeBD(){
+EscapeBD(){
     Cast("mv_escape",30)
     Cast("bladed_dive",30)
     LeftClick()
@@ -138,4 +123,33 @@ BladedDive(){
     Equip("bd_offhand")
     Cast("bladed_dive")
     LeftClick()
+}
+
+
+; Spellbook Swap + Disruption Shield
+SBSDisrupt(){
+    Cast("sbs", ran(1,2))
+    Cast("disruption_shield", ran(1,2))
+}
+
+; Spellbook Swap + Vengeance
+SBSVeng(){
+    Cast("sbs", ran(1,2))
+    Cast("veng", ran(1,2))
+}
+
+; Spellbook Swap + Heal Other
+SBSHealOther(){
+    Cast("sbs", ran(1,2))
+    Cast("heal_other", ran(1,2))
+}
+
+; Pauses the running boss macro script
+PauseScript(){
+    Suspend
+    If A_IsSuspended {
+        TrayTip, "Boss Macros", Macros Deactivated, 5, 1
+    } else {
+        TrayTip, "Boss Macros", Macros Activated, 5, 1
+    }
 }
