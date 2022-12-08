@@ -1,6 +1,5 @@
 ; Random function for delays inbetween actions
-ran(min,max)
-{
+ran(min,max) {
     random, ran, min, max
     return ran
 }
@@ -35,7 +34,7 @@ WaitOneTick() {
 }
 
 ; Helper function to perform a keybind press without keydown
-Equip(Keybind, EnableWait := 0) {
+Equip(Keybind, EnableWait := 30) {
     keybind := %Keybind%
     Send %keybind%
     Sleep, %EnableWait%
@@ -44,7 +43,7 @@ Equip(Keybind, EnableWait := 0) {
 Hybrid(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
-    sleep, ran(1,2)
+    Sleep, ran(1,2)
     Send {%keybind% up}
 }
 
@@ -55,23 +54,36 @@ Cast(Keybind, Wait := 1800) {
     Sleep, %Wait%
 }
 
+; testing proper syntax?
+CastTest(Keybind, Wait := 1800) {
+    keybind := %Keybind%
+    Send {%keybind% down}
+    Send {%keybind% up}
+    Sleep, %Wait%
+}
+
 ; Function helper for Left clicking coords
-CoordClick(Area, InputType){
-   Random, areaX, Coords[Area].X1, Coords[Area].X2
-   Random, areaY, Coords[Area].Y1, Coords[Area].Y2
-   ControlClick, x%areaX% y%areaY%, RuneScape,,%InputType%,,
+CoordClick(Area, InputType) {
+    Random, areaX, Coords[Area].X1, Coords[Area].X2
+    Random, areaY, Coords[Area].Y1, Coords[Area].Y2
+    ControlClick, x%areaX% y%areaY%, RuneScape,,%InputType%,,
 }
 
 ; TC -> Ingen -> Hammer -> BD - LeftClick()
-RagoHammerClimb(){
-    Send, {``}
-    Sleep, 30
-    Send, {F6}
-    Sleep, 30
-    Send, {b}
-    Sleep, 30
-    Send, {W}
-    Sleep, 30
+RagoHammerClimb() {
+    ; Send, {``}
+    ; Sleep, 30
+    ; Send, {F6}
+    ; Sleep, 30
+    ; Send, {b}
+    ; Sleep, 30
+    ; Send, {W}
+    ; Sleep, 30
+    ; LeftClick()
+    CastTest("tc",30)
+    CastTest("ingen",30)
+    CastTest("weapon_special",30)
+    CastTest("bladed_dive",30)
     LeftClick()
 }
 
@@ -105,47 +117,46 @@ AOD4PrebuildP0(){
 }
 
 ; Escape -> BD -> LeftClick()
-EscapeBD(){
+EscapeBD() {
     Cast("mv_escape",30)
     Cast("bladed_dive",30)
     LeftClick()
 }
 
 ; MH + OH
-StallOmni(){
+StallOmni() {
     Cast("mainhand",30)
     Cast("bd_offhand",30)
 }
 
 ; MH + OH -> BD -> LeftClick()
-BladedDive(){
+BladedDive() {
     Equip("bd_mainhand")
     Equip("bd_offhand")
     Cast("bladed_dive")
     LeftClick()
 }
 
-
 ; Spellbook Swap + Disruption Shield
-SBSDisrupt(){
+SBSDisrupt() {
     Cast("sbs", ran(1,2))
     Cast("disruption_shield", ran(1,2))
 }
 
 ; Spellbook Swap + Vengeance
-SBSVeng(){
+SBSVeng() {
     Cast("sbs", ran(1,2))
     Cast("veng", ran(1,2))
 }
 
 ; Spellbook Swap + Heal Other
-SBSHealOther(){
+SBSHealOther() {
     Cast("sbs", ran(1,2))
     Cast("heal_other", ran(1,2))
 }
 
 ; Pauses the running boss macro script
-PauseScript(){
+PauseScript() {
     Suspend
     If A_IsSuspended {
         TrayTip, "Boss Macros", Macros Deactivated, 5, 1
