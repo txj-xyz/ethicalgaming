@@ -24,6 +24,26 @@ const pvm = [
     melee: true,
     image: "images/app.png",
   },
+  {
+    name: "Hybridding (11)",
+    type: "pvm",
+    filePath: scriptsDir + "Hybridding.ahk",
+    variable: "hybridProcess",
+    ranged: false,
+    magic: true,
+    melee: true,
+    image: "images/melee.png",
+  },
+  {
+    name: "Vorago Hammer Climb (12)",
+    type: "pvm",
+    filePath: scriptsDir + "RagoHammerClimb.ahk",
+    variable: "ragoHammerClimb",
+    ranged: false,
+    magic: false,
+    melee: true,
+    image: "images/Vorago_chathead.png",
+  },
 ];
 
 const skilling = [
@@ -50,14 +70,13 @@ const other = [
     variable: "razerModule",
     image: "images/razer.png",
   },
-  // {
-  //   name: "Set Window Title",
-  //   type: "other",
-  //   filePath:
-  //     "C:/Users/ice/Documents/GitHub/automated/utils/SetWindowTitle.ahk",
-  //   variable: "setWindowTitleProcess",
-  //   image: "images/Titles_icon.png",
-  // },
+  {
+    name: "AFK Wave 4 Zuk",
+    type: "other",
+    filePath: scriptsDir + "Wave4AFK.ahk",
+    variable: "afkWave4ZukProcess",
+    image: "images/app.png",
+  },
 ];
 
 const settings = [

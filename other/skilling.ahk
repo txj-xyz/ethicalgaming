@@ -12,7 +12,7 @@ F1 = Help Dialog
 F2 = Extreme Prayers
 F4 = Vuln Bombs
 F5 = AFK Arch Glacor
-LAlt = Reload Script
+F6 = AFK Hunter Proteans
 )
 return
 
@@ -66,6 +66,53 @@ F5:: ; AFK Arch Glacor
   }
 return
 
+F6:: ; NeverLogout + Click Proteans
+  Loop 
+{ 
+    Random, IntSleep, 53565, 153462 
+    Sleep, %IntSleep% 
+
+    Random, IntKey, 0,100
+
+    if IntKey between 0 and 9
+        {
+          CoordClick("HunterProteans", "L")
+          Sleep, 30
+          ControlSend,,{Up down},RuneScape
+          Random, IntSend, 183, 515
+          Sleep, %IntSend%
+          ControlSend,,{Up up},RuneScape
+        }
+    if IntKey between 10 and 23
+        {
+          CoordClick("HunterProteans", "L")
+          Sleep, 30
+          ControlSend,,{Down down},RuneScape
+          Random, IntSend, 312, 634
+          Sleep, %IntSend%
+          ControlSend,,{Down up},RuneScape
+        }
+    if IntKey between 24 and 59
+        {
+          CoordClick("HunterProteans", "L")
+          Sleep, 30
+          ControlSend,,{Left down},RuneScape
+          Random, IntSend, 354, 1176
+          Sleep, %IntSend%
+          ControlSend,,{Left up},RuneScape
+        }
+    if IntKey between 60 and 100
+        {
+          CoordClick("HunterProteans", "L")
+          Sleep, 30
+          ControlSend,,{Right down},RuneScape
+          Random, IntSend, 573, 1343
+          Sleep, %IntSend%
+          ControlSend,,{Right up},RuneScape
+        }
+}
+return
+
 ; Escape to terminate the app.
-LAlt::Reload
-Return
+; LAlt::Reload
+; Return

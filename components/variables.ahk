@@ -9,11 +9,6 @@ brid_2h := "F4"
 brid_boots := "F3"
 brid_prayer := "Delete"
 
-; AOD4 Specific
-aod_ammo := "F3"
-aod_wep := "F4"
-grico := "e"
-
 ; Items
 mainhand := "k"
 offhand := "l"
@@ -22,12 +17,12 @@ bd_mainhand := "["
 bd_offhand := "]"
 fsoa := "\\"
 weapon_special := "b"
-
-; Raksha BC Lani
-bd_boots := "^c"
-lani_spear := "^v"
+quiver := "F3"
+xbow := "F4"
+sgb_eof := "F8"
 
 ; Abilities
+grico := "e"
 bladed_dive := "W"
 mv_surge := "Q"
 mv_escape := "E"
@@ -51,6 +46,7 @@ anticipate := "`!f"
 freedom := "`!a"
 prep := "`!w"
 tsunami := "S"
+
 
 ; Misc
 space_bar := "Space"

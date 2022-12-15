@@ -10,3 +10,14 @@ Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Nex_chathead.png
 ; 4man rotation from austin
 F10::AOD4PrebuildP0()
 Return
+
+
+CapsLock::
+    Cast("mainhand",30)
+    Cast("bd_offhand",30)
+    ; Cast("tc")
+Return
+
+; Razer Naga -> Bottom Left Key (10)
+F23::IngenSGB()
+Return

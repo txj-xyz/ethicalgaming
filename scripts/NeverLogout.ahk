@@ -41,5 +41,4 @@ Loop
             Sleep, %IntSend%
             ControlSend,,{Right up},RuneScape
         }
-
 }

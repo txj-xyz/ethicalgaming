@@ -50,6 +50,8 @@ return
 global aodProcess := ""
 global pvmProcess := ""
 global zamProcess := ""
+global ragoProcess := ""
+global ragoHammerClimb := ""
 global neverLogProcess := ""
 global prayerProcess := ""
 global razerModule := ""
@@ -58,6 +60,8 @@ global clueProcess := ""
 global rangedProcess := ""
 global glacorProcess := ""
 global rakshaProcess := ""
+global hybridProcess := ""
+global afkWave4ZukProcess := ""
 
 Start(neutron, event, name, filePath, variable)
 {

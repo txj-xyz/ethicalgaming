@@ -50,13 +50,6 @@ Hybrid(Keybind) {
 ; Helper function to send a keybind up and down, i.e. casting an ability or auto attack.
 Cast(Keybind, Wait := 1800) {
     keybind := %Keybind%
-    Send %keybind%
-    Sleep, %Wait%
-}
-
-; testing proper syntax?
-CastTest(Keybind, Wait := 1800) {
-    keybind := %Keybind%
     Send {%keybind% down}
     Send {%keybind% up}
     Sleep, %Wait%
@@ -69,21 +62,24 @@ CoordClick(Area, InputType) {
     ControlClick, x%areaX% y%areaY%, RuneScape,,%InputType%,,
 }
 
+; Ingen -> Quiver -> SGB EOF -> Ranged Wep -> EOFSpec
+IngenSGB() {
+    Cast("ingen",30)
+    Cast("quiver",30)
+    Cast("sgb_eof",30)
+    Cast("xbow",30)
+    Cast("eof_spec")
+    Cast("sgb_eof",30)
+    Cast("mainhand",30)
+    Cast("offhand",30)
+}
+
 ; TC -> Ingen -> Hammer -> BD - LeftClick()
 RagoHammerClimb() {
-    ; Send, {``}
-    ; Sleep, 30
-    ; Send, {F6}
-    ; Sleep, 30
-    ; Send, {b}
-    ; Sleep, 30
-    ; Send, {W}
-    ; Sleep, 30
-    ; LeftClick()
-    CastTest("tc",30)
-    CastTest("ingen",30)
-    CastTest("weapon_special",30)
-    CastTest("bladed_dive",30)
+    Cast("tc",30)
+    Cast("ingen",30)
+    Cast("weapon_special",30)
+    Cast("bladed_dive",30)
     LeftClick()
 }
 
