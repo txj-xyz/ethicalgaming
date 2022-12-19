@@ -9,11 +9,17 @@ function createCategoryElement(script, container) {
     const listContainer = document.createElement("li");
     listContainer.setAttribute("class", "list-group-item script");
     // script container
-    const scriptContainer = document.createElement("div");
+    const scriptContainer = document.createElement( "div" );
     scriptContainer.setAttribute("class", "script-container");
     // icon container
     if (script.image) {
-        const iconContainer = document.createElement("div");
+        const iconContainer = document.createElement( "div" );
+        // Custom tooltips from `tippy.js`
+        if ( script.tooltip ) {
+            iconContainer.setAttribute("data-tippy-arrow", "true");
+            iconContainer.setAttribute("data-tippy-followCursor", "true");
+            iconContainer.setAttribute("data-tippy", "<b>" + script.tooltip + "</b>");
+        }
         iconContainer.setAttribute("class", "script-icon-container");
         // chathead icon
         const chatheadIcon = document.createElement("img");
@@ -24,7 +30,7 @@ function createCategoryElement(script, container) {
     }
     // text
     const textElement = document.createElement("div");
-    textElement.setAttribute("class", "ml-2");
+    textElement.setAttribute( "class", "ml-2" );
     textElement.innerText = script.name;
     // right container
     const rightContainer = document.createElement("div");
@@ -50,7 +56,7 @@ function createCategoryElement(script, container) {
 
     // Buttons
     const buttonContainer = document.createElement("div");
-    if (script.type !== "settings") {
+    if ( script.type !== "settings" ) {
         const startButton = document.createElement("button");
         const onclickStartString = "ahk.Start(event, '" + script.name + "', '" + script.filePath + "', '" + script.variable + "')";
         startButton.setAttribute("onclick", onclickStartString);
@@ -68,8 +74,8 @@ function createCategoryElement(script, container) {
         const onclickStartString = "ahk.SettingsStart(event, '" + script.name + "', '" + script.filePath + "')";
         startButton.setAttribute("onclick", onclickStartString);
         startButton.setAttribute("class", "btn btn-success btn-sm");
-        startButton.innerText = "Start"
-        buttonContainer.appendChild(startButton);
+        startButton.innerText = "Start";
+        buttonContainer.appendChild( startButton );
     }
 
     rightContainer.appendChild(buttonContainer);

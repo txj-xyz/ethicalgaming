@@ -31,7 +31,7 @@ const pvm = [
     image: "images/app.png",
   },
   {
-    name: "Hybridding (11)",
+    name: "Hybridding",
     type: "pvm",
     filePath: scriptsDir + "Hybridding.ahk",
     variable: "hybridProcess",
@@ -39,6 +39,7 @@ const pvm = [
     magic: true,
     melee: true,
     image: "images/melee.png",
+    tooltip: "Naga Pro Key (11)"
   },
   {
     name: "Vorago Hammer Climb (12)",
@@ -55,6 +56,7 @@ const pvm = [
 const skilling = [
   {
     name: "Skilling",
+    tooltip: "Press F1 to get started",
     filePath: scriptsOtherDir + "skilling.ahk",
     variable: "skillingProcess",
     image: "images/XP.png",
@@ -64,6 +66,7 @@ const skilling = [
 const other = [
   {
     name: "Never Logout",
+    tooltip: "Send camera functions to RuneScape in the background",
     type: "other",
     filePath: scriptsDir + "NeverLogout.ahk",
     variable: "neverLogProcess",
@@ -71,6 +74,7 @@ const other = [
   },
   {
     name: "Razer Mouse Module",
+    tooltip: "This module controls buttons (10,11,12) on the Razer Naga Pro",
     type: "other",
     filePath: scriptsDir + "RazerModule.ahk",
     variable: "razerModule",
@@ -88,6 +92,7 @@ const other = [
 const settings = [
   {
     name: "English Client",
+    tooltip: "Starts the Steam client by default",
     type: "settings",
     filePath: "steam://rungameid/1343400",
     image: "images/united-kingdom.png",
@@ -109,5 +114,5 @@ const settings = [
     type: "settings",
     filePath: "rs-launch://www.runescape.com/l=3/jav_config.ws",
     image: "images/brazil.png",
-  },
+  }
 ];
