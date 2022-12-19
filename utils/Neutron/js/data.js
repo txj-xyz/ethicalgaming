@@ -1,7 +1,13 @@
 const scriptsDir = window.location.pathname
   .split("/")
   .slice(this.length + 1, 3)
-  .join("/") + "/scripts/";
+  .join( "/" ) + "/scripts/";
+  
+const scriptsOtherDir =
+  window.location.pathname
+    .split("/")
+    .slice(this.length + 1, 3)
+    .join("/") + "/other/";
 
 const pvm = [
   {
@@ -48,10 +54,10 @@ const pvm = [
 
 const skilling = [
   {
-    name: "Prayer",
-    filePath: "C:/Users/ice/Desktop/Macros/RuneScape/Skilling/Prayer.ahk",
-    variable: "prayerProcess",
-    options: ["1", "2"],
+    name: "Skilling",
+    filePath: scriptsOtherDir + "skilling.ahk",
+    variable: "skillingProcess",
+    image: "images/XP.png",
   },
 ];
 

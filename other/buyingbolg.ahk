@@ -10,7 +10,7 @@ SendMode Input
 F23::
 Send, {Enter}
 Sleep, 100
-Send, red:Selling aurora dye 1.9b
+Send, flash2:Buying bolg
 Sleep, 100
 Send, {Enter}
 Return

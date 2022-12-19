@@ -68,10 +68,10 @@ IngenSGB() {
     Cast("quiver",30)
     Cast("sgb_eof",30)
     Cast("xbow",30)
-    Cast("eof_spec")
+    Cast("eof_spec",1800)
     Cast("sgb_eof",30)
-    Cast("mainhand",30)
-    Cast("offhand",30)
+    Cast("quiver",30)
+    Cast("xbow",30)
 }
 
 ; TC -> Ingen -> Hammer -> BD - LeftClick()

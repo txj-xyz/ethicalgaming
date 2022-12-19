@@ -11,3 +11,8 @@ Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Vorago_chathead.png
 F24::
     RagoHammerClimb()
 Return
+
+; Razer Naga -> Bottom Left Key (10)
+F23::
+    EscapeBD()
+Return
