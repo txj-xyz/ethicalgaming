@@ -11,14 +11,15 @@ const scriptsOtherDir =
 
 const pvm = [
   {
-    name: "Nex: AoD 4s",
+    name: "Nex AoD: 4-7s",
     type: "pvm",
     filePath: scriptsDir + "AOD4s.ahk",
     variable: "aodProcess",
-    ranged: false,
+    ranged: true,
     magic: true,
     melee: false,
     image: "images/Nex_chathead.png",
+    tooltip: "Hammer Stall / Ingen SGB / 4s P0 Rotation",
   },
   {
     name: "PvM 2:1 Rebinds",
@@ -29,6 +30,7 @@ const pvm = [
     magic: true,
     melee: true,
     image: "images/app.png",
+    tooltip: "Contains 2:1 remaps for common utilities<br>(e.g SBS -> Veng)",
   },
   {
     name: "Hybridding",
@@ -39,7 +41,7 @@ const pvm = [
     magic: true,
     melee: true,
     image: "images/melee.png",
-    tooltip: "Naga Pro Key (11)"
+    tooltip: "Naga Pro Key (11)",
   },
   {
     name: "Vorago Hammer Climb (12)",
@@ -58,6 +60,20 @@ const skilling = [
     name: "Skilling",
     tooltip: "Press F1 to get started",
     filePath: scriptsOtherDir + "skilling.ahk",
+    variable: "skillingProcess",
+    image: "images/XP.png",
+  },
+  {
+    name: "AFK Proteans",
+    tooltip: "Press F6 start, Items must be in the first slot",
+    filePath: scriptsOtherDir + "FirstSlot.ahk",
+    variable: "skillingProcess",
+    image: "images/Huge_protean_pack.png",
+  },
+  {
+    name: "AFK Disassemble",
+    tooltip: "Press F6 start, Items must be in the first slot<br>` to Exit",
+    filePath: scriptsOtherDir + "AFKDisassemble.ahk",
     variable: "skillingProcess",
     image: "images/XP.png",
   },

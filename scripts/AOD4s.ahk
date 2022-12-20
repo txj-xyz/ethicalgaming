@@ -12,10 +12,10 @@ Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Nex_chathead.png
 ; Return
 
 
+; CapsLock -> MH + BD OH
 CapsLock::
     Cast("mainhand",30)
     Cast("bd_offhand",30)
-    ; Cast("tc")
 Return
 
 ; Razer Naga -> Bottom Left Key (10)
