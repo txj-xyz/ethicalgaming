@@ -44,7 +44,7 @@ const pvm = [
     tooltip: "Naga Pro Key (11)",
   },
   {
-    name: "Vorago Hammer Climb (12)",
+    name: "Vorago Hammer Climb",
     type: "pvm",
     filePath: scriptsDir + "RagoHammerClimb.ahk",
     variable: "ragoHammerClimb",
@@ -52,6 +52,7 @@ const pvm = [
     magic: false,
     melee: true,
     image: "images/Vorago_chathead.png",
+    tooltip: "Hammer Climbing (12)"
   },
 ];
 
@@ -72,10 +73,11 @@ const skilling = [
   },
   {
     name: "AFK Disassemble",
-    tooltip: "Press F6 start, Items must be in the first slot<br>` to Exit",
+    tooltip:
+      "<i>Items must be in the first slot</i><br>Press F6 start<br>` to Exit",
     filePath: scriptsOtherDir + "AFKDisassemble.ahk",
     variable: "skillingProcess",
-    image: "images/XP.png",
+    image: "images/Invention.png",
   },
 ];
 
