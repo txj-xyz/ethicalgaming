@@ -21,7 +21,7 @@ F6::
     }
 Return
 
-`::
+F7::
     TrayTip, AFK Disassembler, Exiting, 5, 16
-    Reload
+    ExitApp
 Return

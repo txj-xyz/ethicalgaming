@@ -19,7 +19,7 @@ const pvm = [
     magic: true,
     melee: false,
     image: "images/Nex_chathead.png",
-    tooltip: "Hammer Stall / Ingen SGB / 4s P0 Rotation",
+    tooltip: "Hammer Stall / Ingen SGB",
   },
   {
     name: "PvM 2:1 Rebinds",
@@ -67,14 +67,14 @@ const skilling = [
   {
     name: "AFK Proteans",
     tooltip: "Press F6 start, Items must be in the first slot",
-    filePath: scriptsOtherDir + "FirstSlot.ahk",
+    filePath: scriptsOtherDir + "HunterProteans.ahk",
     variable: "skillingProcess",
     image: "images/Huge_protean_pack.png",
   },
   {
     name: "AFK Disassemble",
     tooltip:
-      "<i>Items must be in the first slot</i><br>Press F6 start<br>` to Exit",
+      "<i>Items must be in the first slot</i><br>Press F6 start<br>Press F7 stop<br>` to Exit",
     filePath: scriptsOtherDir + "AFKDisassemble.ahk",
     variable: "skillingProcess",
     image: "images/Invention.png",

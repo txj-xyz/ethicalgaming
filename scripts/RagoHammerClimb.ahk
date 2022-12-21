@@ -14,6 +14,10 @@ F24::
 Return
 
 ; Razer Naga -> Bottom Right Key (11) = F22
+F22::
+    Hybrid("quiver")
+    Hybrid("xbow")
+Return
 
 ; Razer Naga -> Bottom Left Key (10)
 F23::

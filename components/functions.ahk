@@ -83,35 +83,6 @@ RagoHammerClimb() {
     LeftClick()
 }
 
-; AOD4 prebuild
-AOD4PrebuildP0(){
-    Cast("natty")
-    Cast("gconc")
-    Cast("wrack")
-    Cast("impact")
-    Cast("anticipate")
-    Cast("sunshine")
-    Cast("freedom")
-    Equip("mainhand")
-    Equip("shield", 600)
-    Cast("prep")
-    Cast("tsunami")
-    Equip("fsoa", 600)
-    Cast("weapon_special")
-    Equip("mainhand", 30)
-    Equip("offhand", 30)
-    Cast("gconc")
-    Send, {F3}
-    Sleep, 30
-    Send, {F4}
-    Sleep, 30
-    Send, {e}
-    Sleep, 600
-    Send, {F3}
-    Sleep, 30
-    Send, {F4}
-}
-
 ; Escape -> BD -> LeftClick()
 EscapeBD() {
     Cast("mv_escape",30)
