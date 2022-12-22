@@ -3,7 +3,8 @@
 #Include, components\variables.ahk
 #Include, components\coordinates.ahk
 #Include, components\functions.ahk
-#MaxThreadsPerHotkey 2
+#MaxThreadsPerHotkey 1
+SetControlDelay -1
 SendMode Input
 Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Huge_protean_pack.png
 

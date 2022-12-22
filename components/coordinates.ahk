@@ -4,7 +4,8 @@ global Coords := Object()
 Coords.Bank := Object("X1", 1177, "Y1", 577, "X2", 1177, "Y2", 577)
 Coords.Exsang := Object("X1", 1010, "Y1", 1415, "X2", 1010, "Y2", 1415)
 Coords.Incite := Object("X1", 1050, "Y1", 1415, "X2", 1050, "Y2", 1415)
-Coords.FirstSlot := Object("X1", 1622, "Y1", 1207, "X2", 1643, "Y2", 1226) ; First invent slot
+; Coords.FirstSlot := Object("X1", 1622, "Y1", 1207, "X2", 1643, "Y2", 1226) ; First invent slot
+Coords.FirstSlot := Object("X1", 892, "Y1", 584, "X2", 892, "Y2", 584)
 Coords.DisassembleMageBook := Object("X1", 870, "Y1", 1264, "X2", 891, "Y2", 1284)
 
 ; Summoning Coords for ControlClick
