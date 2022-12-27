@@ -74,7 +74,7 @@ Options: (White space separated)
 Q::
     coordinates := SelectArea()
     ; TrayTip, Coordinates, Coordinates Copied to Clipboard, 20, 1
-    TrayTip, Coordinates Copied to Clipboard, %coordinates%, 20, 1
+    TrayTip, Coordinates Copied to Clipboard, Object(%coordinates%), 20, 1
     clipboard := coordinates
 Return
 
