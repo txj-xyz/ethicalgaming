@@ -1,12 +1,12 @@
 const scriptsDir = window.location.pathname
   .split("/")
-  .slice(this.length + 1, 3)
+  .slice(this.length + 1, -3)
   .join( "/" ) + "/scripts/";
   
 const scriptsOtherDir =
   window.location.pathname
     .split("/")
-    .slice(this.length + 1, 3)
+    .slice(this.length + 1, -3)
     .join("/") + "/other/";
 
 const pvm = [
