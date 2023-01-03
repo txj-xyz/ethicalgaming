@@ -73,7 +73,7 @@ SettingsStart(neutron, event, name, filePath)
 Stop(neutron, event, name, variable)
 {
 	processId := %variable%
-	RunWait, taskkill /pid %processId%,,hide
+	Run, taskkill /pid %processId%,,hide
 	%variable% := ""
 	TrayTip, %name%, Stopped, 20, 16
 }
