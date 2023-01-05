@@ -15,11 +15,11 @@ const pvm = [
     type: "pvm",
     filePath: scriptsDir + "AOD4s.ahk",
     variable: "aodProcess",
-    ranged: true,
+    ranged: false,
     magic: true,
     melee: false,
     image: "images/Nex_chathead.png",
-    tooltip: "Hammer Stall / Ingen SGB",
+    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)",
   },
   {
     name: "PvM 2:1 Rebinds",
@@ -44,15 +44,15 @@ const pvm = [
     tooltip: "Naga Pro Key (11)",
   },
   {
-    name: "Vorago Hammer Climb",
+    name: "Vorago",
     type: "pvm",
     filePath: scriptsDir + "RagoHammerClimb.ahk",
     variable: "ragoHammerClimb",
     ranged: false,
-    magic: false,
+    magic: true,
     melee: true,
     image: "images/Vorago_chathead.png",
-    tooltip: "Hammer Climbing (12)"
+    tooltip: "Escape BD (10)<br>Energizing Dbow (11)<br>Hammer Climbing (12)"
   },
 ];
 
@@ -104,6 +104,14 @@ const other = [
     filePath: scriptsDir + "Wave4AFK.ahk",
     variable: "afkWave4ZukProcess",
     image: "images/app.png",
+  },
+  {
+    name: "Coordinate Selector",
+    tooltip: "Press or Hold Q to select coordinates<br>Press ESC stop",
+    type: "other",
+    filePath: scriptsOtherDir + "find-coords.ahk",
+    variable: "coordsProcess",
+    image: "images/Invention.png",
   },
 ];
 
