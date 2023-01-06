@@ -105,14 +105,6 @@ const other = [
     variable: "afkWave4ZukProcess",
     image: "images/app.png",
   },
-  {
-    name: "Coordinate Selector",
-    tooltip: "Press or Hold Q to select coordinates<br>Press ESC stop",
-    type: "other",
-    filePath: scriptsOtherDir + "find-coords.ahk",
-    variable: "coordsProcess",
-    image: "images/Invention.png",
-  },
 ];
 
 const settings = [
@@ -140,5 +132,13 @@ const settings = [
     type: "settings",
     filePath: "rs-launch://www.runescape.com/l=3/jav_config.ws",
     image: "images/brazil.png",
-  }
+  },
+  {
+    name: "Coordinate Selector",
+    tooltip: "Press or Hold Q to select coordinates<br>Press ESC stop",
+    type: "settings",
+    filePath: scriptsOtherDir + "find-coords.ahk",
+    variable: "coordsProcess",
+    image: "images/Invention.png",
+  },
 ];
