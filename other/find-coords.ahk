@@ -70,14 +70,16 @@ Options: (White space separated)
     }
 }
 
-; MsgBox,
-; (
-; Coordinate Helper:
+MsgBox,
+(
+Coordinate Helper:
 
-; Press or Hold Q to get coordinates
+Press or Hold Q to get coordinates
 
-; NOTE: Make sure you CLICK on the window you wish to be relative
-; )
+Example Output: Object("X1", -465, "Y1", 821, "X2", -465, "Y2", 821)
+
+NOTE: Make sure you CLICK on the window you wish to be relative
+)
 
 ; Right click + hold to select area.
 Q::
