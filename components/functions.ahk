@@ -15,7 +15,7 @@ LeftClick() {
 RightClick() {
     Send {Click down Right}
     Send {Click up Right}
-    Sleep, % ran(1,2)
+    Sleep, ran(1,2)
 }
 
 ; Wait a certain ms time for ticks
