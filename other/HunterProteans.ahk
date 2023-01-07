@@ -15,15 +15,11 @@ F1::
 F1 = Help Dialog
 F5 = AFK Clicking
 F7 = Exit App
+F8 = Reload App
 )
 return
 
-
 F5::
-
-    ; random sleep timer
-    random_time := ran(33565, 52462)
-
     ; get screen mouse coords
     CoordMode, Mouse, Screen
     MouseGetPos, XSmousePos, YSmousePos
@@ -36,8 +32,12 @@ F5::
     ControlClick, x%XRmousePos% y%YRmousePos%, RuneScape,,L,,
     
     ; Start timer to check if RuneScape is active window
-    SetTimer, CheckRuneScape, 500
-    SetTimer, AFKLoop, %random_time%
+    timer_random := ran(1000,5000)
+    SetTimer, GetRandomNumber, 1000
+    SetTimer, CheckRuneScape, 50
+    SetTimer, AFKLoop, %timer_random%
+
+    
 
     ; the timer above will call this every 500ms
     CheckRuneScape:
@@ -66,19 +66,39 @@ F5::
 
     ; AFK loop
     AFKLoop:
+
+        ; setup random sleep for the AFK timer
+        Sleep, %random_time%
+
         ; setup 50x50 box of fuzzy randomizing pixels
         Random, XRmouseRandom, -25, 25
         Random, YRmouseRandom, -25, 25
         randomXClick := XRmousePos + XRmouseRandom
         randomYClick := YRmousePos + YRmouseRandom
 
+        ; send traytip when clicker is ready
+        timer_seconds := random_time / 1000
+        TrayTip, AFK Clicking, Clicking window now `nTook: %timer_seconds% seconds, 3, 16
+
+        ; click runescape
         ControlClick, x%randomXClick% y%randomYClick%, RuneScape,,L,,
+    return
+
+    ; set a local scope random number variable that changes every 1000ms
+    GetRandomNumber:
+        random_time := 6000
+        Random, random_time, 23565, 42462
     return
 Return
 
-
 ; emergency exit app
 F7::
-    TrayTip, AFK Proteans, Exiting, 3, 16
+    TrayTip, AFK Skilling, Exiting, 3, 16
 ExitApp
+Return
+
+; emergency exit app
+F8::
+    TrayTip, AFK Skilling, Reloading all modules, 3, 16
+Reload
 Return
