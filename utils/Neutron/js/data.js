@@ -65,13 +65,6 @@ const skilling = [
     image: "images/XP.png",
   },
   {
-    name: "AFK Skilling",
-    tooltip: "Press F1 to get started",
-    filePath: scriptsOtherDir + "HunterProteans.ahk",
-    variable: "skillingProcess",
-    image: "images/Huge_protean_pack.png",
-  },
-  {
     name: "AFK Disassemble",
     tooltip:
       "<i>Items must be in the first slot</i><br>Press F6 start<br>Press F7 stop<br>` to Exit",
