@@ -7,6 +7,7 @@ Coords.Incite := Object("X1", 1050, "Y1", 1415, "X2", 1050, "Y2", 1415)
 ; Coords.FirstSlot := Object("X1", 1622, "Y1", 1207, "X2", 1643, "Y2", 1226) ; First invent slot
 Coords.FirstSlot := Object("X1", 892, "Y1", 584, "X2", 892, "Y2", 584)
 Coords.DisassembleMageBook := Object("X1", 870, "Y1", 1264, "X2", 891, "Y2", 1284)
+Coords.AFKHarps := Object("X1", 1222, "Y1", 779, "X2", 1460, "Y2", 923)
 
 ; Summoning Coords for ControlClick
 global Shop := Object()
