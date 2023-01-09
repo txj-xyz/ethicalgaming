@@ -79,6 +79,12 @@ const skilling = [
     variable: "skillingProcess",
     image: "images/Invention.png",
   },
+  {
+    name: "AFK Harps",
+    filePath: scriptsOtherDir + "AFKHarps.ahk",
+    variable: "skillingProcess",
+    image: "images/harp.png",
+  },
 ];
 
 const other = [
