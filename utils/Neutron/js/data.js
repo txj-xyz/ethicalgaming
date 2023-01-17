@@ -19,7 +19,7 @@ const pvm = [
     magic: true,
     melee: false,
     image: "images/Nex_chathead.png",
-    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)",
+    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)<br>Ice Auto before Spec (b)",
   },
   {
     name: "PvM 2:1 Rebinds",
@@ -52,7 +52,18 @@ const pvm = [
     magic: true,
     melee: true,
     image: "images/Vorago_chathead.png",
-    tooltip: "Escape BD (10)<br>Energizing Dbow (11)<br>Hammer Climbing (12)"
+    tooltip: "Escape BD (10)<br>Grico Switch(11)<br>Hammer Climbing (12)",
+  },
+  {
+    name: "Raksha",
+    type: "pvm",
+    filePath: scriptsDir + "Raksha.ahk",
+    variable: "rakshaProcess",
+    ranged: false,
+    magic: true,
+    melee: false,
+    image: "images/Raksha.png",
+    tooltip: "Pools BD Switch (F4)",
   },
 ];
 
@@ -77,6 +88,7 @@ const skilling = [
     filePath: scriptsOtherDir + "AFKHarps.ahk",
     variable: "skillingProcess",
     image: "images/harp.png",
+    tooltip: "<i>Reset compass<br>Zoom all the way in before starting</i>",
   },
 ];
 

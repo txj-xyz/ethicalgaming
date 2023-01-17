@@ -8,6 +8,7 @@ fsoa := "\\"
 weapon_special := "b"
 quiver := "F3"
 xbow := "F4"
+ecb := "F4"
 sgb_eof := "F8"
 
 ; Abilities
@@ -35,6 +36,7 @@ anticipate := "`!f"
 freedom := "`!a"
 prep := "`!w"
 tsunami := "S"
+ice_barrage := "NumpadDiv"
 
 ; Misc
 space_bar := "Space"

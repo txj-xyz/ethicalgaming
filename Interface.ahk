@@ -56,6 +56,7 @@ global razerModule := ""
 global hybridProcess := ""
 global afkWave4ZukProcess := ""
 global coordsProcess := ""
+global rakshaProcess := ""
 
 Start(neutron, event, name, filePath, variable)
 {

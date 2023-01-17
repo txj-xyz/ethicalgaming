@@ -16,3 +16,16 @@ Return
 ; Razer Naga -> Bottom Left Key (10)
 F23::IngenSGB()
 Return
+
+; Ice auto before specs
+b::
+    Cast("ice_barrage",30)
+    Cast("weapon_special",30)
+Return
+
+; grico switch
+F22::
+    Cast("quiver",30)
+    Cast("ecb",30)
+Return
+

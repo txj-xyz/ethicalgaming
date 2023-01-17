@@ -59,14 +59,12 @@ function createCategoryElement(script, container) {
     if ( script.type !== "settings" ) {
         const startButton = document.createElement("button");
         const onclickStartString = "ahk.Start(event, '" + script.name + "', '" + script.filePath + "', '" + script.variable + "');";
-        const onclickStartRunning = "if(!this.parentNode.innerText.search('[RUNNING]')){this.insertAdjacentHTML('beforebegin', '<b><font color=red>[RUNNING]</font></b>');};"
         startButton.setAttribute("onclick", onclickStartString);
         startButton.setAttribute("class", "btn btn-success btn-sm");
         startButton.innerText = "Start"
         buttonContainer.appendChild(startButton);
         const stopButton = document.createElement("button");
         const onclickStopString = "ahk.Stop(event, '" + script.name + "', '" + script.variable + "')";
-        const onclickStopRunning = "if(this.parentNode.innerText.search('[RUNNING]')){this.parentNode.childNodes[0].remove()};"
         stopButton.setAttribute("onclick", onclickStopString);
         stopButton.setAttribute("class", "btn btn-danger btn-sm");
         stopButton.innerText = "Stop"

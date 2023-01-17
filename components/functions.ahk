@@ -40,6 +40,7 @@ Equip(Keybind, EnableWait := 30) {
     Sleep, %EnableWait%
 }
 
+;equip brid binds
 Hybrid(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
