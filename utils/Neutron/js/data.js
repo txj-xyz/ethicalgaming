@@ -19,7 +19,7 @@ const pvm = [
     magic: true,
     melee: false,
     image: "images/Nex_chathead.png",
-    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)<br>Ice Auto before Spec (b)",
+    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)<br>Auto Deto Gstaff (Ctrl + A)",
   },
   {
     name: "PvM 2:1 Rebinds",

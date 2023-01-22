@@ -26,3 +26,14 @@ Return
 ;     Cast("grico_switch",30)
 ; }
 ; Return
+
+
+F11::
+    Send, {Enter down}
+    Send, {Enter up}
+    Sleep, 150
+    Send, Selling pwand 2.3b
+    Sleep, 150
+    Send, {Enter down}
+    Send, {Enter up}
+Return

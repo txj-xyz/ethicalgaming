@@ -4,6 +4,13 @@ ran(min,max) {
     return ran
 }
 
+; Auto -> Deto -> Gstaff
+AutoDetoGstaff() {
+    Cast("ice_barrage",75)
+    Cast("detonate",75)
+    Cast("eof_spec",25)
+}
+
 ; Helper function to perform a left click.
 LeftClick() {
     Send {Click down}
