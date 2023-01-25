@@ -8,6 +8,9 @@ Coords.Incite := Object("X1", 1050, "Y1", 1415, "X2", 1050, "Y2", 1415)
 Coords.FirstSlot := Object("X1", 892, "Y1", 584, "X2", 892, "Y2", 584)
 Coords.DisassembleMageBook := Object("X1", 870, "Y1", 1264, "X2", 891, "Y2", 1284)
 Coords.AFKHarps := Object("X1", 1222, "Y1", 779, "X2", 1460, "Y2", 923)
+Coords.InventionWorkbench := Object("X1", 1715, "Y1", 874, "X2", 1715, "Y2", 874)
+Coords.InventionBank := Object("X1", 1732, "Y1", 544, "X2", 1732, "Y2", 544)
+
 
 ; Summoning Coords for ControlClick
 global Shop := Object()
@@ -21,3 +24,5 @@ Shop.PouchFirst := Object("X1", 1085, "Y1", 539, "X2", 1085, "Y2", 539)
 Shop.PouchSecond := Object("X1", 1070, "Y1", 685, "X2", 1070, "Y2", 685)
 Shop.ShopSlot1 := Object("X1", 1158, "Y1", 787, "X2", 1158, "Y2", 787)
 Shop.ShopSlot2 := Object("X1", 1142, "Y1", 994, "X2", 1142, "Y2", 994)
+
+

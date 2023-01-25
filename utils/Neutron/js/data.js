@@ -19,7 +19,7 @@ const pvm = [
     magic: true,
     melee: false,
     image: "images/Nex_chathead.png",
-    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)<br>Auto Deto Gstaff (Ctrl + A)",
+    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)",
   },
   {
     name: "PvM 2:1 Rebinds",
@@ -89,6 +89,13 @@ const skilling = [
     variable: "skillingProcess",
     image: "images/harp.png",
     tooltip: "<i>Reset compass<br>Zoom all the way in before starting</i>",
+  },
+  {
+    name: "AFK Dummies",
+    filePath: scriptsOtherDir + "AFKDummies.ahk",
+    variable: "skillingProcess",
+    image: "images/dummy.png",
+    tooltip: "<i>Stand on the Invention Bank tile<br>Reset compass<br>Zoom all the way out before starting</i>",
   },
 ];
 

@@ -10,7 +10,7 @@ brid_helm := "F6"
 brid_body := "F8"
 brid_legs := "F4"
 brid_boots := "F3"
-brid_2h := "`,"
+brid_2h := "F7"
 brid_prayer := "Delete"
 
 
