@@ -1,3 +1,5 @@
+SendMode, Input
+
 ; Items
 mainhand := "k"
 offhand := "l"
@@ -14,7 +16,9 @@ ecb := "F4"
 
 ; EOFs
 sgb_eof := "F8"
+gstaff_eof := "F8"
 eof_spec := "F"
+hammer_eof := "F7"
 
 ; Abilities
 grico := "e"

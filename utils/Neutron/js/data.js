@@ -11,13 +11,13 @@ const scriptsOtherDir =
 
 const pvm = [
   {
-    name: "Nex AoD: 4-7s",
+    name: "Nex Angel of Death",
     type: "pvm",
-    filePath: scriptsDir + "AOD4s.ahk",
+    filePath: scriptsDir + "AODHybrid.ahk",
     variable: "aodProcess",
     ranged: false,
     magic: true,
-    melee: false,
+    melee: true,
     image: "images/Nex_chathead.png",
     tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)",
   },

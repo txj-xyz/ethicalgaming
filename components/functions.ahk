@@ -1,3 +1,4 @@
+SendMode, Input
 ; Random function for delays inbetween actions
 ran(min,max) {
     random, ran, min, max
@@ -47,12 +48,23 @@ Equip(Keybind, EnableWait := 30) {
     Sleep, %EnableWait%
 }
 
-;equip brid binds
+; Function to equip items via Hybrid
 Hybrid(Keybind) {
     keybind := %Keybind%
     Send {%keybind% down}
     Sleep, ran(1,2)
     Send {%keybind% up}
+}
+
+; Hybrid Swap
+HybridSwitch(){
+    Hybrid("brid_helm")
+    Hybrid("brid_body")
+    Hybrid("brid_legs")
+    Hybrid("brid_boots")
+    Hybrid("brid_prayer")
+    Sleep, ran(1,30)
+    Hybrid("brid_2h")
 }
 
 ; Helper function to send a keybind up and down, i.e. casting an ability or auto attack.
@@ -86,9 +98,20 @@ IngenSGB() {
 RagoHammerClimb() {
     Cast("tc",30)
     Cast("ingen",30)
-    Cast("weapon_special",30)
+    Cast("eof_spec",30)
     Cast("bladed_dive",30)
     LeftClick()
+}
+
+; TC -> SC -> EOF Spec -> Staff
+HammerSmokeStaff() {
+    Cast("tc",30)
+    Cast("smoke_cloud",30)
+    Cast("hammer_eof",70)
+    Cast("ingen",30)
+    Cast("hammer_eof",30)
+    Cast("eof_spec",30)
+    Cast("xbow",30)
 }
 
 ; Escape -> BD -> LeftClick()
@@ -130,12 +153,8 @@ SBSHealOther() {
     Cast("heal_other", ran(1,2))
 }
 
-; Pauses the running boss macro script
-PauseScript() {
-    Suspend
-    If A_IsSuspended {
-        TrayTip, "Boss Macros", Macros Deactivated, 5, 1
-    } else {
-        TrayTip, "Boss Macros", Macros Activated, 5, 1
-    }
+; Grico Switch
+GricoSwitch() {
+    Cast("quiver",30)
+    Cast("ecb",30)
 }

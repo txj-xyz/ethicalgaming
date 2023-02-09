@@ -6,7 +6,7 @@
 #MaxThreadsPerHotkey 4
 SetControlDelay -1
 SetTitleMatchMode, 2
-SendMode Input
+; SendMode Input
 Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\harp.png
 
 
@@ -28,7 +28,7 @@ Xpos := (x1Begin < x2End) ? x1Begin : x2End
 Ypos := (y1Begin < y1End) ? y1Begin : y1End
 
 
-ControlClick, x%areaX% y%areaY%, RuneScape,,%InputType%,,
+ControlClick, x%areaX% y%areaY%, RuneScape
 
 ; Start timer to check if RuneScape is active window
 timer_random := ran(1000,5000)
@@ -71,7 +71,7 @@ AFKLoop:
     TrayTip, AFK Harps, Clicking window now `nTook: %timer_seconds% seconds, 3, 16
 
     ; click runescape
-    ControlClick, x%areaX% y%areaY%, RuneScape,,%InputType%,,
+    ControlClick, x%areaX% y%areaY%, RuneScape
 return
 
 ; set a local scope random number variable that changes every 1000ms

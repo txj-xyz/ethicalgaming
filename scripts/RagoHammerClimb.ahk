@@ -13,10 +13,8 @@ F24::
     RagoHammerClimb()
 Return
 
-; grico switch
-F22::
-    Cast("quiver",30)
-    Cast("ecb",30)
+; Razer Naga -> Bottom Middle Key (11)
+F22::GricoSwitch()
 Return
 
 ; Razer Naga -> Bottom Left Key (10)

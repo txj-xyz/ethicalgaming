@@ -4,7 +4,7 @@
 #Include, components\coordinates.ahk
 #Include, components\functions.ahk
 #MaxThreadsPerHotkey 2
-SendMode Input
+; SendMode Input
 #IfWinActive RuneScape
   Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\XP.png
 
@@ -12,18 +12,18 @@ SendMode Input
     MsgBox,
 (
 F1 = Help Dialog
-F2 = Extreme Prayers
+F2 = Potion (3 ingredient)
 F4 = Vuln Bombs
 F5 = AFK Arch Glacor
-F6 = AFK Hunter Proteans
+F6 = Click Proteans
 )
   return
 
-  F2:: ; Extreme Prayers
+  F2:: ; Potion (3 ingredient)
     Loop {
       sleep, % ran(10, 100)
-      ; CoordClick("Bank") ; click bank
-      sleep, % ran(1200, 4501)
+      CoordClick("MaxBank", "L") ; click bank
+      sleep, % ran(1023, 1908)
       ControlSend,,{2 down},RuneScape ;load preset
       sleep, % ran(10, 100)
       ControlSend,,{2 up},RuneScape
@@ -35,7 +35,7 @@ F6 = AFK Hunter Proteans
       ControlSend,,{Space down},RuneScape
       sleep, % ran(10, 100)
       ControlSend,,{Space up},RuneScape
-      sleep, % ran(15000, 16000)
+      sleep, % ran(10000, 11000)
     }
   Return
 
@@ -72,7 +72,7 @@ F6 = AFK Hunter Proteans
     CoordClick("FirstSlot", "L")
     Loop
     {
-      Random, IntSleep, 53565, 153462
+      Random, IntSleep, 1230, 5091
       Sleep, %IntSleep%
 
       Random, IntKey, 0,100

@@ -20,9 +20,9 @@ Return
 Return
 
 ; grico + pools bd switch
-; F4::
-; {
-;     Cast("quiver",30)
-;     Cast("grico_switch",30)
-; }
+F4::GricoSwitch()
+Return
+
+
+; F9::PauseScript()
 ; Return
