@@ -16,6 +16,7 @@ F2 = Potion (3 ingredient)
 F4 = Vuln Bombs
 F5 = AFK Arch Glacor
 F6 = Click Proteans
+F7 = AFK Clicking
 )
   return
 
@@ -96,6 +97,34 @@ F6 = Click Proteans
     }
   return
 
+  F7:: ; AFK Clicking
+    LeftClick()
+    Loop
+    {
+      Random, IntSleep, 1230, 5091
+      Sleep, %IntSleep%
+
+      Random, IntKey, 0,100
+
+      if IntKey between 0 and 9
+      {
+        LeftClick()
+      }
+      if IntKey between 10 and 23
+      {
+        LeftClick()
+      }
+      if IntKey between 24 and 59
+      {
+        LeftClick()
+      }
+      if IntKey between 60 and 100
+      {
+        LeftClick()
+      }
+    }
+  return
+
 ; Escape to terminate the app.
-; LAlt::Reload
-; Return
+LAlt::ExitApp
+Return
