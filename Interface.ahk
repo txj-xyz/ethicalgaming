@@ -57,6 +57,7 @@ global hybridProcess := ""
 global afkWave4ZukProcess := ""
 global coordsProcess := ""
 global rakshaProcess := ""
+global zamorakProcess := ""
 
 Start(neutron, event, name, filePath, variable)
 {
