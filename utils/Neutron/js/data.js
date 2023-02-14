@@ -11,7 +11,7 @@ const scriptsOtherDir =
 
 const pvm = [
   {
-    name: "Nex Angel of Death",
+    name: "Nex Angel of Death (Hybrid)",
     type: "pvm",
     filePath: scriptsDir + "AODHybrid.ahk",
     variable: "aodProcess",
@@ -19,7 +19,20 @@ const pvm = [
     magic: true,
     melee: true,
     image: "images/Nex_chathead.png",
-    tooltip: "Hammer Stall (CapsLock)<br>Ingen SGB (10)",
+    tooltip:
+      "Hammer Stall (CapsLock)<br>Hybrid Switch (11)<br>Auto -> Deto -> Gstaff(12)",
+  },
+  {
+    name: "Nex Angel of Death (4man)",
+    type: "pvm",
+    filePath: scriptsDir + "AOD4Mage.ahk",
+    variable: "aodProcess",
+    ranged: false,
+    magic: true,
+    melee: false,
+    image: "images/Nex_chathead.png",
+    tooltip:
+      "Hammer Stall (CapsLock)<br>Ingen SGB (10)<br>Auto -> Deto -> Gstaff(12)",
   },
   {
     name: "PvM 2:1 Rebinds",
@@ -55,15 +68,15 @@ const pvm = [
     tooltip: "Escape BD (10)<br>Grico Switch(11)<br>Hammer Climbing (12)",
   },
   {
-    name: "Raksha",
+    name: "Zamorak",
     type: "pvm",
-    filePath: scriptsDir + "Raksha.ahk",
-    variable: "rakshaProcess",
+    filePath: scriptsDir + "Zamorak.ahk",
+    variable: "zamorakProcess",
     ranged: false,
     magic: true,
     melee: false,
-    image: "images/Raksha.png",
-    tooltip: "Pools BD Switch (F4)",
+    image: "images/Zamorak_chathead.png",
+    tooltip: "2:1 Spirit Shield (*)",
   },
 ];
 
