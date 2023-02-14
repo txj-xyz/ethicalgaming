@@ -127,6 +127,12 @@ StallOmni() {
     Cast("bd_offhand",30)
 }
 
+; Wand + Orb / Melee / Range Equivilent 
+EquipDualWield() {
+    Cast("mainhand",30)
+    Cast("offhand",30)
+}
+
 ; MH + OH -> BD -> LeftClick()
 BladedDive() {
     Equip("bd_mainhand")
