@@ -9,6 +9,7 @@ bd_offhand := "]"
 fsoa := "\\"
 weapon_special := "b"
 quiver := "F3"
+spirit_arcane := "NumpadMult"
 
 ; Weapons
 xbow := "F4"
