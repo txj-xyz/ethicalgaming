@@ -23,6 +23,8 @@ Return
 ; Razer Naga -> Bottom Left Key (10)
 ; F23::IngenSGB()
 ; Return
+F24::AutoDetoGstaff()
+Return
 
 ; grico
 ; F4::GricoSwitch()
