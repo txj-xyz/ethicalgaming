@@ -1,53 +1,100 @@
 SendMode, Input
 
-; Items
+
+; ----------------------------------
+; ------------- Items --------------
+; ----------------------------------
+
+; Magic
+
+; Range
+quiver := "F3"
+
+; Melee
+
+
+; ----------------------------------
+; ------------- EOFs --------------
+; ----------------------------------
+
+; Magic
+gstaff_eof := "F8"
+
+; Range
+sgb_eof := "F8"
+
+; Melee
+hammer_eof := "F7"
+
+
+
+; ----------------------------------
+; ------------- Weapons ------------
+; ----------------------------------
+
 mainhand := "k"
 offhand := "l"
 shield := "`;"
-bd_mainhand := "["
-bd_offhand := "]"
+2h_weapons := "\\"
+
+; Magic 
 fsoa := "\\"
-weapon_special := "b"
-quiver := "F3"
 spirit_arcane := "NumpadMult"
 
-; Weapons
+; Range
 xbow := "F4"
 ecb := "F4"
+chins := "NumpadDiv"
 
-; EOFs
-sgb_eof := "F8"
-gstaff_eof := "F8"
+; Melee
+bd_mainhand := "["
+bd_offhand := "]"
+
+
+
+; ----------------------------------
+; ------------- Other ------------
+; ----------------------------------
+
+weapon_special := "b"
+hammer := "b"
 eof_spec := "F"
-hammer_eof := "F7"
-
-; Abilities
-grico := "e"
-bladed_dive := "W"
-mv_surge := "Q"
-mv_escape := "E"
-sunshine := "g"
 apot := "F7"
-ingen := "F6"
 tc := "``"
+target_cycle := "``"
+
+
+; ----------------------------------
+; ------------- Abilities ------------
+; ----------------------------------
+
+; Magic
+mv_surge := "Q"
+sunshine := "g"
 gconc := "e"
 smoke_cloud := "NumpadSub"
-disruption_shield := "C"
 veng := "V"
 sbs := "X"
-broken_sbs := "m"
 heal_other := "B"
-hammer := "b"
-natty := "N"
 wrack := "d"
 impact := "z"
-anticipate := "`!f"
-call_familiar := "`!e"
-freedom := "`!a"
-prep := "`!w"
 tsunami := "S"
 detonate := "a"
 ice_barrage := "NumpadDiv"
 
-; Misc
-space_bar := "Space"
+; Range
+grico := "e"
+mv_escape := "E"
+
+; Melee
+bladed_dive := "W"
+
+; Constitution
+ingen := "F6"
+
+; Defensives
+disruption_shield := "C"
+natty := "N"
+anticipate := "`!f"
+freedom := "`!a"
+prep := "`!w"

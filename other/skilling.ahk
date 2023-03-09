@@ -98,7 +98,7 @@ F7 = AFK Clicking
   return
 
   F7:: ; AFK Clicking
-    LeftClick()
+    ControlSend,,LeftClick(),RuneScape
     Loop
     {
       Random, IntSleep, 1230, 5091
@@ -108,19 +108,19 @@ F7 = AFK Clicking
 
       if IntKey between 0 and 9
       {
-        LeftClick()
+        ControlSend,,LeftClick(),RuneScape
       }
       if IntKey between 10 and 23
       {
-        LeftClick()
+        ControlSend,,LeftClick(),RuneScape
       }
       if IntKey between 24 and 59
       {
-        LeftClick()
+        ControlSend,,LeftClick(),RuneScape
       }
       if IntKey between 60 and 100
       {
-        LeftClick()
+        ControlSend,,LeftClick(),RuneScape
       }
     }
   return

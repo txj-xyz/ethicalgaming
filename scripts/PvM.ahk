@@ -24,9 +24,8 @@ F4::GricoSwitch()
 Return
 
 ; standard equip dual wield binds
-K::EquipDualWield()
-Return
-
+; K::EquipDualWield()
+; Return
 
 ; F9::PauseScript()
 ; Return
