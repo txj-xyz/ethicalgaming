@@ -1,3 +1,14 @@
+var globalState = [];
+
+Array.prototype.some = function (callback, thisArg) {
+    for (var i = 0; i < this.length; i++) {
+        if (callback.call(thisArg, this[i], i, this)) {
+            return true;
+        }
+    }
+    return false;
+};
+
 const pvmContainer = document.getElementById("pvm-container");
 const skillingContainer = document.getElementById("skilling-container");
 const otherContainer = document.getElementById("other-container");
@@ -9,13 +20,13 @@ function createCategoryElement(script, container) {
     const listContainer = document.createElement("li");
     listContainer.setAttribute("class", "list-group-item script");
     // script container
-    const scriptContainer = document.createElement( "div" );
+    const scriptContainer = document.createElement("div");
     scriptContainer.setAttribute("class", "script-container");
     // icon container
     if (script.image) {
-        const iconContainer = document.createElement( "div" );
+        const iconContainer = document.createElement("div");
         // Custom tooltips from `tippy.js`
-        if ( script.tooltip ) {
+        if (script.tooltip) {
             iconContainer.setAttribute("data-tippy-arrow", "true");
             iconContainer.setAttribute("data-tippy-followCursor", "true");
             iconContainer.setAttribute("data-tippy", "<b>" + script.tooltip + "</b>");
@@ -30,7 +41,7 @@ function createCategoryElement(script, container) {
     }
     // text
     const textElement = document.createElement("div");
-    textElement.setAttribute( "class", "ml-2" );
+    textElement.setAttribute("class", "ml-2");
     textElement.innerText = script.name;
     // right container
     const rightContainer = document.createElement("div");
@@ -46,9 +57,9 @@ function createCategoryElement(script, container) {
         const rangedIcon = document.createElement("img");
         rangedIcon.setAttribute("src", "images/ranged.png");
         rangedIcon.setAttribute("alt", "ranged");
-        script.magic ? mageIcon.setAttribute("class", "style-icon") : mageIcon.setAttribute("class", "style-icon style-disabled")
-        script.melee ? meleeIcon.setAttribute("class", "style-icon") : meleeIcon.setAttribute("class", "style-icon style-disabled")
-        script.ranged ? rangedIcon.setAttribute("class", "style-icon") : rangedIcon.setAttribute("class", "style-icon style-disabled")
+        script.magic ? mageIcon.setAttribute("class", "style-icon") : mageIcon.setAttribute("class", "style-icon style-disabled");
+        script.melee ? meleeIcon.setAttribute("class", "style-icon") : meleeIcon.setAttribute("class", "style-icon style-disabled");
+        script.ranged ? rangedIcon.setAttribute("class", "style-icon") : rangedIcon.setAttribute("class", "style-icon style-disabled");
         rightContainer.appendChild(mageIcon);
         rightContainer.appendChild(meleeIcon);
         rightContainer.appendChild(rangedIcon);
@@ -56,18 +67,39 @@ function createCategoryElement(script, container) {
 
     // Buttons
     const buttonContainer = document.createElement("div");
-    if ( script.type !== "settings" ) {
+    if (script.type !== "settings") {
+        // Start PVMing Scripts here
         const startButton = document.createElement("button");
-        const onclickStartString = "ahk.Start(event, '" + script.name + "', '" + script.filePath + "', '" + script.variable + "');";
-        startButton.setAttribute("onclick", onclickStartString);
         startButton.setAttribute("class", "btn btn-success btn-sm");
-        startButton.innerText = "Start"
+        startButton.innerText = "Start";
+        // Add listener for each button
+        startButton.addEventListener( "click", function ( name ) {
+            // prettier-ignore
+            if (globalState.some(function (variable) { return script.variable === variable;})) return alert(script.variable + "is already running.");
+            ahk.Start(event, script.name, script.filePath, script.variable);
+            globalState.push(script.variable);
+            startButton.hidden = true;
+            stopButton.hidden = false;
+        });
         buttonContainer.appendChild(startButton);
+
+        // Stop PVMing Scripts here
         const stopButton = document.createElement("button");
-        const onclickStopString = "ahk.Stop(event, '" + script.name + "', '" + script.variable + "')";
-        stopButton.setAttribute("onclick", onclickStopString);
         stopButton.setAttribute("class", "btn btn-danger btn-sm");
-        stopButton.innerText = "Stop"
+        stopButton.innerText = "Stop";
+        stopButton.hidden = true;
+        // Add listener for each button
+        stopButton.addEventListener( "click", function ( name ) {
+            //prettier-ignore
+            if (globalState.some( function ( variable ) { return script.variable === variable; })) {
+                globalState.splice( globalState.indexOf( script.variable ), 1 );
+                ahk.Stop(event, script.name, script.variable);
+                startButton.hidden = false;
+                stopButton.hidden = true;
+            } else {
+                return alert(script.variable + "is not running")
+            }
+        });
         buttonContainer.appendChild(stopButton);
     } else {
         const startButton = document.createElement("button");
@@ -75,7 +107,7 @@ function createCategoryElement(script, container) {
         startButton.setAttribute("onclick", onclickStartString);
         startButton.setAttribute("class", "btn btn-success btn-sm");
         startButton.innerText = "Start";
-        buttonContainer.appendChild( startButton );
+        buttonContainer.appendChild(startButton);
     }
 
     rightContainer.appendChild(buttonContainer);
@@ -93,17 +125,17 @@ other.forEach(initOther);
 settings.forEach(initSettings);
 
 function initPvM(script) {
-    createCategoryElement(script, pvmContainer)
+    createCategoryElement(script, pvmContainer);
 }
 
 function initSkilling(script) {
-    createCategoryElement(script, skillingContainer)
+    createCategoryElement(script, skillingContainer);
 }
 
 function initOther(script) {
-    createCategoryElement(script, otherContainer)
+    createCategoryElement(script, otherContainer);
 }
 
 function initSettings(script) {
-    createCategoryElement(script, settingsContainer)
+    createCategoryElement(script, settingsContainer);
 }
