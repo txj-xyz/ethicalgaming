@@ -2,6 +2,19 @@ SendMode, Input
 
 
 ; ----------------------------------
+; Razer Mouse Button Vars
+; ----------------------------------
+
+RazerButton4 := "NumpadSub"
+RazerButton5 := "NumpadMult"
+RazerButton6 := "NumpadDiv"
+
+RazerButton7 := "NumpadSub"
+RazerButton8 := "NumpadSub"
+RazerButton9 := "NumpadSub"
+
+
+; ----------------------------------
 ; ------------- Items --------------
 ; ----------------------------------
 
@@ -44,7 +57,8 @@ spirit_arcane := "NumpadMult"
 ; Range
 xbow := "F4"
 ecb := "F4"
-chins := "NumpadDiv"
+chins := "NumpadSub"
+asc_caroming := "NumpadDiv"
 
 ; Melee
 bd_mainhand := "["

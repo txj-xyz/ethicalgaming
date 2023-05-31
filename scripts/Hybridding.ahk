@@ -3,7 +3,7 @@
 #MaxThreadsPerHotkey 2
 SendMode Input
 #IfWinActive RuneScape
-; Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\melee.png
+Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\melee.png
 
 ; ---------------------------------------------------
 ; --------------- Configuration ---------------------

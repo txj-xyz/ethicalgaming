@@ -164,3 +164,9 @@ GricoSwitch() {
     Cast("quiver",30)
     Cast("ecb",30)
 }
+
+; Equip Chins + OH Caroming
+CaromingChins() {
+    Cast("chins", ran(1,2))
+    Cast("asc_caroming", ran(1,2))
+}

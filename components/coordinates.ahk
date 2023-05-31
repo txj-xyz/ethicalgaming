@@ -10,7 +10,7 @@ Coords.DisassembleMageBook := Object("X1", 870, "Y1", 1264, "X2", 891, "Y2", 128
 Coords.AFKHarps := Object("X1", 1222, "Y1", 779, "X2", 1460, "Y2", 923)
 Coords.InventionWorkbench := Object("X1", 1715, "Y1", 874, "X2", 1715, "Y2", 874)
 Coords.InventionBank := Object("X1", 1732, "Y1", 544, "X2", 1732, "Y2", 544)
-Coords.MaxBank := Object("X1", 1713, "Y1", 863, "X2", 1713, "Y2", 863)
+Coords.MaxBank := Object("X1", 1250, "Y1", 830, "X2", 1325, "Y2", 939)
 
 ; Summoning Coords for ControlClick
 global Shop := Object()
