@@ -5,7 +5,6 @@
 #MaxThreadsPerHotkey 2
 SendMode Input
 Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Logout_icon.png
-
 Loop 
 { 
     Random, IntSleep, 53565, 153462 
