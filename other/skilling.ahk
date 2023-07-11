@@ -141,7 +141,8 @@ Return
       ControlSend,,{Space down},RuneScape
       sleep, % ran(10, 100)
       ControlSend,,{Space up},RuneScape
-      sleep, % ran(9872, 11092)
+      ; sleep, % ran(9872, 11092)
+      sleep, % ran(15492, 16209)
     }
   Return
 
