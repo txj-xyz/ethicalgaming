@@ -20,8 +20,8 @@ Return
 Return
 
 ; grico + pools bd switch
-F4::GricoSwitch()
-Return
+; F4::GricoSwitch()
+; Return
 
 ; NumpadSub::CaromingChins()
 ; Return
