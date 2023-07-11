@@ -23,18 +23,6 @@ const pvm = [
       "Hammer Stall (CapsLock)<br>Hybrid Switch (11)<br>Auto -> Deto -> Gstaff(12)",
   },
   {
-    name: "Nex Angel of Death (4man)",
-    type: "pvm",
-    filePath: scriptsDir + "AOD4Mage.ahk",
-    variable: "aodProcess",
-    ranged: false,
-    magic: true,
-    melee: false,
-    image: "images/Nex_chathead.png",
-    tooltip:
-      "Hammer Stall (CapsLock)<br>Ingen SGB (10)<br>Auto -> Deto -> Gstaff(12)",
-  },
-  {
     name: "PvM 2:1 Rebinds",
     type: "pvm",
     filePath: scriptsDir + "PvM.ahk",
@@ -81,61 +69,74 @@ const pvm = [
 ];
 
 const skilling = [
-  {
-    name: "Skilling",
-    tooltip: "Press F1 to get started",
-    filePath: scriptsOtherDir + "skilling.ahk",
-    variable: "skillingProcess",
-    image: "images/XP.png",
-  },
-  {
-    name: "AFK Disassemble",
-    tooltip:
-      "<i>Items must be in the first slot</i><br>Press F6 start<br>Press F7 stop<br>` to Exit",
-    filePath: scriptsOtherDir + "AFKDisassemble.ahk",
-    variable: "skillingProcess",
-    image: "images/Invention.png",
-  },
-  {
-    name: "AFK Harps",
-    filePath: scriptsOtherDir + "AFKHarps.ahk",
-    variable: "skillingProcess",
-    image: "images/harp.png",
-    tooltip: "<i>Reset compass<br>Zoom all the way in before starting</i>",
-  },
-  {
-    name: "AFK Dummies",
-    filePath: scriptsOtherDir + "AFKDummies.ahk",
-    variable: "skillingProcess",
-    image: "images/dummy.png",
-    tooltip: "<i>Stand on the Invention Bank tile<br>Reset compass<br>Zoom all the way out before starting</i>",
-  },
+    {
+        name: "Skilling",
+        tooltip: "Press F1 to get started",
+        filePath: scriptsOtherDir + "skilling.ahk",
+        variable: "skillingProcess",
+        image: "images/XP.png",
+    },
+    {
+        name: "AFK Disassemble",
+        tooltip: "<i>Items must be in the first slot</i><br>Press F6 start<br>Press F7 stop<br>` to Exit",
+        filePath: scriptsOtherDir + "AFKDisassemble.ahk",
+        variable: "skillingProcess",
+        image: "images/Invention.png",
+    },
+    {
+        name: "AFK Harps",
+        filePath: scriptsOtherDir + "AFKHarps.ahk",
+        variable: "skillingProcess",
+        image: "images/harp.png",
+        tooltip: "<i>Reset compass<br>Zoom all the way in before starting</i>",
+    },
+    {
+        name: "AFK Dummies",
+        filePath: scriptsOtherDir + "AFKDummies.ahk",
+        variable: "skillingProcess",
+        image: "images/dummy.png",
+        tooltip: "<i>Stand on the Invention Bank tile<br>Reset compass<br>Zoom all the way out before starting</i>",
+    },
+    {
+        name: "Fishing",
+        filePath: scriptsDir + "Fishing.ahk",
+        variable: "skillingProcess",
+        image: "images/fishing.png",
+        tooltip: "Press F2 to start clicking where you pressed F2",
+    },
 ];
 
 const other = [
-  {
-    name: "Never Logout",
-    tooltip: "Send camera functions to RuneScape in the background",
-    type: "other",
-    filePath: scriptsDir + "NeverLogout.ahk",
-    variable: "neverLogProcess",
-    image: "images/Logout_icon.png",
-  },
-  {
-    name: "Razer Mouse Module",
-    tooltip: "This module controls buttons (10,11,12) on the Razer Naga Pro",
-    type: "other",
-    filePath: scriptsDir + "RazerModule.ahk",
-    variable: "razerModule",
-    image: "images/razer.png",
-  },
-  {
-    name: "AFK Wave 4 Zuk",
-    type: "other",
-    filePath: scriptsDir + "Wave4AFK.ahk",
-    variable: "afkWave4ZukProcess",
-    image: "images/app.png",
-  },
+    {
+        name: "Never Logout",
+        tooltip: "Send camera functions to RuneScape in the background",
+        type: "other",
+        filePath: scriptsDir + "NeverLogout.ahk",
+        variable: "neverLogProcess",
+        image: "images/Logout_icon.png",
+    },
+    {
+        name: "Razer Mouse Module",
+        tooltip: "This module controls buttons (10,11,12) on the Razer Naga Pro",
+        type: "other",
+        filePath: scriptsDir + "RazerModule.ahk",
+        variable: "razerModule",
+        image: "images/razer.png",
+    },
+    {
+        name: "AFK Wave 4 Zuk",
+        type: "other",
+        filePath: scriptsDir + "Wave4AFK.ahk",
+        variable: "afkWave4ZukProcess",
+        image: "images/app.png",
+    },
+    {
+        name: "AFK Helwyr",
+        type: "other",
+        filePath: scriptsDir + "AFKHelwyr.ahk",
+        variable: "afkHelwyrProcess",
+        image: "images/app.png",
+    },
 ];
 
 const settings = [
