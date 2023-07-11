@@ -18,6 +18,6 @@ F22::GricoSwitch()
 Return
 
 ; Razer Naga -> Bottom Left Key (10)
-F23::
+[::
     EscapeBD()
 Return
