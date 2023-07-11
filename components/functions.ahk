@@ -56,7 +56,7 @@ Hybrid(Keybind) {
     Send {%keybind% up}
 }
 
-; Hybrid Swap
+; helm -> body -> legs -> boots -> prayer -> 2h
 HybridSwitch(){
     Hybrid("brid_helm")
     Hybrid("brid_body")
