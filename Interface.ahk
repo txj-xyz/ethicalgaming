@@ -58,6 +58,7 @@ global afkWave4ZukProcess := ""
 global coordsProcess := ""
 global rakshaProcess := ""
 global zamorakProcess := ""
+global afkHelwyrProcess := ""
 
 Start(neutron, event, name, filePath, variable)
 {
