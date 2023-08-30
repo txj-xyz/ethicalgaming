@@ -19,16 +19,12 @@ Return
 +B::SBSHealOther()
 Return
 
-; grico + pools bd switch
-; F4::GricoSwitch()
+; K::StallOmni()
 ; Return
 
-; NumpadSub::CaromingChins()
-; Return
-
-; standard equip dual wield binds
-; K::EquipDualWield()
-; Return
-
-; F9::PauseScript()
+; F9::
+; {
+;     SayChat("Thank you for coming to your trial, unfortunately you failed")
+;     SayChat("You may leave the group now :3")
+; }
 ; Return

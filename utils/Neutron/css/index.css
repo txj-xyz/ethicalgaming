@@ -1,3 +1,17 @@
+/* Disable text selection for the entire page (Trident engine) */
+body {
+  -ms-user-select: none;
+}
+
+/* Disable dragging for all elements (Trident engine) */
+* {
+  -ms-user-drag: none;
+}
+
+
+
+
+
 html,
 body {
     width: 100%;

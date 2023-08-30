@@ -5,11 +5,12 @@ SendMode Input
 #IfWinActive RuneScape
 Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\melee.png
 
-; ---------------------------------------------------
 ; --------------- Configuration ---------------------
-; ---------------------------------------------------
 
 ; Hybridding keybinds configuration
+; To find a list of keys go here:
+; https://www.autohotkey.com/docs/v1/KeyList.htm
+
 brid_helm := "F6"
 brid_body := "F8"
 brid_legs := "F4"
@@ -17,22 +18,23 @@ brid_boots := "["
 brid_2h := "F7"
 brid_prayer := "Delete"
 
-; F22 is configured to be our hybrid swap button, you can swap that below to anything you want
-; Check the documentation for AHK Keys if you need any help
+
+;
+; Change the keybind below for the activation button;
+; ----
 F22::HybridSwitch()
 Return
-; ---------------------------------------------------
-; ---------------------------------------------------
-; ---------------------------------------------------
 
 
 
 
 
 
-; ---------------------------------------------------
-; ------------------- Functions ---------------------
-; ---------------------------------------------------
+
+
+; Ignore below ---
+; ------------------- Functions --------------------
+
 
 ; Function to equip items via Hybrid
 Equip(Keybind) {
@@ -53,7 +55,7 @@ HybridSwitch(){
     Equip("brid_2h")
 }
 
-; Random numbers
+; Random number function
 ran(min,max) {
     random, ran, min, max
     return ran

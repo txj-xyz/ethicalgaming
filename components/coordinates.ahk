@@ -2,15 +2,20 @@
 
 global Coords := Object()
 Coords.Bank := Object("X1", 1177, "Y1", 577, "X2", 1177, "Y2", 577)
-Coords.Exsang := Object("X1", 1010, "Y1", 1415, "X2", 1010, "Y2", 1415)
-Coords.Incite := Object("X1", 1050, "Y1", 1415, "X2", 1050, "Y2", 1415)
 ; Coords.FirstSlot := Object("X1", 1622, "Y1", 1207, "X2", 1643, "Y2", 1226) ; First invent slot
-Coords.FirstSlot := Object("X1", 1472, "Y1", 1186, "X2", 1497, "Y2", 1208)
+Coords.FirstSlot := Object("X1", 2117, "Y1", 1068, "X2", 2148, "Y2", 1096)
 Coords.DisassembleMageBook := Object("X1", 474, "Y1", 1247, "X2", 488, "Y2", 1262)
 Coords.AFKHarps := Object("X1", 1222, "Y1", 779, "X2", 1460, "Y2", 923)
 Coords.InventionWorkbench := Object("X1", 1715, "Y1", 874, "X2", 1715, "Y2", 874)
 Coords.InventionBank := Object("X1", 1732, "Y1", 544, "X2", 1732, "Y2", 544)
-Coords.MaxBank := Object("X1", 1250, "Y1", 830, "X2", 1325, "Y2", 939)
+Coords.MaxBank := Object("X1", 1734, "Y1", 206, "X2", 1757, "Y2", 237)
+Coords.Esang := Object("X1", 1419, "Y1", 1375, "X2", 1419, "Y2", 1375)
+Coords.Incite := Object("X1", 1459, "Y1", 1376, "X2", 1459, "Y2", 1376)
+Coords.TopMaxBankWellDXP := Object("X1", 2224, "Y1", 648, "X2", 2376, "Y2", 771)
+Coords.FamiliarSpec := Object("X1", 2634, "Y1", 1289, "X2", 2634, "Y2", 1289)
+Coords.Inventory_Windowed_125_scale := Object("X1", 2101, "Y1", 1072, "X2", 2393, "Y2", 1270)
+Coords.Prayer_Windowed_125_scale := Object("X1", 3175, "Y1", 458, "X2", 3387, "Y2", 756)
+Coords.RitualAltar := Object("X1", 1711, "Y1", 695, "X2", 1738, "Y2", 722)
 
 ; Summoning Coords for ControlClick
 global Shop := Object()

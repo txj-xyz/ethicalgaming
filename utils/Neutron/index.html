@@ -22,6 +22,12 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/popper.js@1"></script>
   <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+    // Disable right-click context menu
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  </script>
 </head>
 
 <body class="d-flex flex-column">

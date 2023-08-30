@@ -59,6 +59,8 @@ global coordsProcess := ""
 global rakshaProcess := ""
 global zamorakProcess := ""
 global afkHelwyrProcess := ""
+global testingProcess := ""
+global familiarProccess := ""
 
 Start(neutron, event, name, filePath, variable)
 {

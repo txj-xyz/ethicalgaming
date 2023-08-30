@@ -23,3 +23,6 @@ Return
 ; Razer Naga -> Bottom Middle Key (11)
 F22::HybridSwitch()
 Return
+
+; F24::AODHammerRelease()
+; Return

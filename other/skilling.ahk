@@ -146,6 +146,24 @@ Return
     }
   Return
 
+  ; Batch supremes / Batch Normal Overloads (4.8s)
+  F9:: ; Potion (supreme overloads)
+    Loop {
+      CoordClick("MaxBank", "L") ; click bank
+      sleep, % ran(954, 1060)
+      ControlSend,,{2 down},RuneScape ;load preset
+      sleep, % ran(10, 100)
+      ControlSend,,{2 up},RuneScape
+      sleep, % ran(499, 791)
+      CoordClick("TopMaxBankWellDXP", "L") ; click well
+      sleep, % ran(821, 1127)
+      ControlSend,,{Space down},RuneScape ;load preset
+      sleep, % ran(10, 100)
+      ControlSend,,{Space up},RuneScape
+      sleep, % ran(5319, 6278) ; wait for pot
+    }
+  Return
+
 ; Escape to terminate the app.
 LAlt::ExitApp
 Return

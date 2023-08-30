@@ -95,8 +95,15 @@ const skilling = [
     },
     {
         name: "AFK Disassemble",
-        tooltip: "<i>Items must be in the first slot</i><br>Press F6 start<br>Press F7 stop<br>` to Exit",
+        tooltip: "<i>Items must be in the first slot</i><br>Press F9 start<br>Press F10 stop<br>` to Exit",
         filePath: scriptsOtherDir + "AFKDisassemble.ahk",
+        variable: "skillingProcess",
+        image: "images/Invention.png",
+    },
+    {
+        name: "AFK Rituals",
+        tooltip: "<i>Items must be in the first slot</i><br>Press F9 start<br>Press F10 stop<br>` to Exit",
+        filePath: scriptsOtherDir + "AFKRituals.ahk",
         variable: "skillingProcess",
         image: "images/Invention.png",
     },

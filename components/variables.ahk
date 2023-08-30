@@ -2,6 +2,15 @@ SendMode, Input
 
 
 ; ----------------------------------
+; Modifier Keys Global Var
+; ----------------------------------
+global ModifierKeys := Object()
+ModifierKeys.Alt := "Alt"
+ModifierKeys.Shift := "Shift"
+ModifierKeys.Ctrl := "Ctrl"
+ModifierKeys.Control := "Ctrl"
+
+; ----------------------------------
 ; Razer Mouse Button Vars
 ; ----------------------------------
 
@@ -53,6 +62,7 @@ shield := "`;"
 ; Magic 
 fsoa := "\\"
 spirit_arcane := "NumpadMult"
+inquis := ","
 
 ; Range
 xbow := "F4"
@@ -73,7 +83,7 @@ bd_offhand := "]"
 weapon_special := "b"
 hammer := "b"
 eof_spec := "F"
-apot := "F7"
+apot := "h"
 tc := "``"
 target_cycle := "``"
 
@@ -93,8 +103,11 @@ heal_other := "B"
 wrack := "d"
 impact := "z"
 tsunami := "S"
+nami := "S"
 detonate := "a"
 ice_barrage := "NumpadDiv"
+omni := "v"
+tendril := "d"
 
 ; Range
 grico := "e"
@@ -112,3 +125,7 @@ natty := "N"
 anticipate := "`!f"
 freedom := "`!a"
 prep := "`!w"
+
+
+; Other
+call_familiar := "e"

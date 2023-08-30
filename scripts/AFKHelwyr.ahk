@@ -10,15 +10,19 @@ Loop
 {
 
     ; define random number
-    Random, random_time, 8492, 24918
-    timer_seconds := random_time / 1000
+    Random, random_time, 14492, 24918
+    timer_seconds := Round(random_time / 1000)
 
     ; Alert picking up loot
     TrayTip, AFK Helwyr, Grabbing loot`nTook: %timer_seconds% seconds, 3, 16
 
     ; Grab loot
     ControlSend,,{Space},RuneScape
-    ControlSend,,{g},RuneScape
+    ControlSend,,{v},RuneScape
+    WaitHalfTick()
+    ControlSend,,{v},RuneScape
+    WaitHalfTick()
+    ControlSend,,{v},RuneScape
     Sleep, %random_time%
 }
 
@@ -30,3 +34,7 @@ Loop
 ;         MsgBox, Found at x%FoundX% y%FoundY%
 ;     }
 ; }
+
+
+F12::ExitApp
+Return
