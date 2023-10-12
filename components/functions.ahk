@@ -105,7 +105,7 @@ Cast(Keybind, Wait := 1800, Modifier := "") {
 }
 
 ; Say something in the game via a string parameter
-; @Message = String | @Type = "" | "//" | "///" | "////"
+; @Message = String --- @Type = "" | "//" | "///" | "////"
 SayChat(Message, Type := "") {
     message := Message
     message_type := Type
@@ -163,13 +163,20 @@ HammerSmokeStaff() {
     Cast("xbow",30)
 }
 
-; TC -> SC -> MH+OH -> GCONC
+; TC -> SC -> MH+OH
 AODHammerRelease() {
     Cast("tc",30)
-    Cast("smoke_cloud",30)
+    Cast("smoke_cloud",80)
     Cast("mainhand",30)
     Cast("offhand",30)
-    Cast("gconc",30) 
+}
+
+; TC -> SC -> MH+OH -> Death Skulls
+AODNecroHammerRelease() {
+    Cast("tc",30)
+    Cast("smoke_cloud",70)
+    Cast("mainhand",70)
+    Cast("death_skulls",70)
 }
 
 ; Escape -> BD -> LeftClick()

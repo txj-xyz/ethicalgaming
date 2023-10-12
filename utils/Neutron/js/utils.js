@@ -57,12 +57,17 @@ function createCategoryElement(script, container) {
         const rangedIcon = document.createElement("img");
         rangedIcon.setAttribute("src", "images/ranged.png");
         rangedIcon.setAttribute("alt", "ranged");
+        const necroIcon = document.createElement("img");
+        necroIcon.setAttribute("src", "images/necro.png");
+        necroIcon.setAttribute("alt", "necro");
         script.magic ? mageIcon.setAttribute("class", "style-icon") : mageIcon.setAttribute("class", "style-icon style-disabled");
         script.melee ? meleeIcon.setAttribute("class", "style-icon") : meleeIcon.setAttribute("class", "style-icon style-disabled");
-        script.ranged ? rangedIcon.setAttribute("class", "style-icon") : rangedIcon.setAttribute("class", "style-icon style-disabled");
+        script.ranged ? rangedIcon.setAttribute( "class", "style-icon" ) : rangedIcon.setAttribute( "class", "style-icon style-disabled" );
+        script.necro ? necroIcon.setAttribute("class", "style-icon") : necroIcon.setAttribute("class", "style-icon style-disabled");
         rightContainer.appendChild(mageIcon);
         rightContainer.appendChild(meleeIcon);
         rightContainer.appendChild(rangedIcon);
+        rightContainer.appendChild(necroIcon);
     }
 
     // Buttons

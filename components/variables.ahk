@@ -92,11 +92,15 @@ target_cycle := "``"
 ; ------------- Abilities ------------
 ; ----------------------------------
 
+; Necromancy
+death_skulls := "D"
+
+
 ; Magic
 mv_surge := "Q"
 sunshine := "g"
 gconc := "e"
-smoke_cloud := "NumpadSub"
+smoke_cloud := "`;"
 veng := "V"
 sbs := "X"
 heal_other := "B"

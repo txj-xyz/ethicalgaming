@@ -83,8 +83,6 @@ F2::
 }
 Return
 
-
-
 ; Generate a random number between 23091 and 90224
 GetRandomNumber()
 {
