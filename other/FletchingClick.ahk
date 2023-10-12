@@ -7,21 +7,16 @@
 SendMode Input
 Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Fletching.png
 
-
-IfWinActive, ahk_exe rs2client.exe
+Loop
 {
-    Loop
-    {
         ControlSend,,{d down},RuneScape
         ControlSend,,{d up},RuneScape
         WaitOneTick()
         WaitHalfTick()
         ControlSend,,{Space down},RuneScape
         ControlSend,,{Space up},RuneScape
-        Sleep, ran(9891,11422)
-    }
+        Sleep, ran(11921,12452)
 }
-
 
 LAlt::ExitApp
 Return

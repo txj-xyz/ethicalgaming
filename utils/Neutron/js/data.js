@@ -137,7 +137,7 @@ const skilling = [
         filePath: scriptsOtherDir + "FletchingClick.ahk",
         variable: "skillingProcess",
         image: "images/Fletching.png",
-        tooltip: "Press F22 to start Fletching",
+        tooltip: "Fletches in the background (D -> Space Bar)",
     },
 ];
 
