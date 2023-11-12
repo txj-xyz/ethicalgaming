@@ -5,14 +5,7 @@
 #MaxThreadsPerHotkey 2
 SendMode Input
 #IfWinActive RuneScape
-Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Raksha.png
+Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\magic.png
 
-
-; pools bd switch
-F4::
-{
-    ; Cast("quiver",30)
-    ; Cast("grico_switch",30)
-    
-}
+F7::Cast("target_cycle",30)
 Return

@@ -11,11 +11,11 @@ Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\melee.png
 ; To find a list of keys go here:
 ; https://www.autohotkey.com/docs/v1/KeyList.htm
 
-brid_helm := "F6"
+brid_helm := "F7"
 brid_body := "F8"
 brid_legs := "F4"
 brid_boots := "["
-brid_2h := "F7"
+brid_2h := "F6"
 brid_prayer := "Delete"
 
 

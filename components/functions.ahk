@@ -66,7 +66,7 @@ HybridSwitch(){
     Hybrid("brid_helm")
     Hybrid("brid_body")
     Hybrid("brid_legs")
-    Hybrid("brid_boots")
+    ; Hybrid("brid_boots")
     Hybrid("brid_prayer")
     Sleep, ran(1,30)
     Hybrid("brid_2h")

@@ -62,7 +62,7 @@ shield := "`;"
 ; Magic 
 fsoa := "\\"
 spirit_arcane := "NumpadMult"
-inquis := ","
+inquis := "Delete"
 
 ; Range
 xbow := "F4"
@@ -72,7 +72,7 @@ asc_caroming := "NumpadDiv"
 
 ; Melee
 bd_mainhand := "["
-bd_offhand := "]"
+bd_offhand := ","
 
 
 

@@ -1,10 +1,12 @@
 /* Disable text selection for the entire page (Trident engine) */
 body {
   -ms-user-select: none;
+  -ms-user-drag: none;
 }
 
 /* Disable dragging for all elements (Trident engine) */
 * {
+  -ms-user-select: none;
   -ms-user-drag: none;
 }
 
