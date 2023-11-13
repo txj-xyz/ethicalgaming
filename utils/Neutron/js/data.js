@@ -93,6 +93,13 @@ const skilling = [
         image: "images/Fletching.png",
         tooltip: "Fletches in the background (D -> Space Bar)",
     },
+    {
+        name: "Crafting",
+        filePath: scriptsOtherDir + "AFKProteanHides.ahk",
+        variable: "skillingProcess",
+        image: "images/Crafting.png",
+        tooltip: "Proteans in the background (S -> Space Bar)",
+    },
 ];
 
 const other = [
