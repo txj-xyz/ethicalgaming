@@ -3,6 +3,7 @@
 #MaxThreadsPerHotkey 2
 SendMode Input
 SetTitleMatchMode, 2 ; Allow for partial matching of window titles
+Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\Fletching.png
 
 ; Keybind configuration
 game_client := __checkClient()
