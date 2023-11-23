@@ -87,35 +87,3 @@ Button(neutron, event)
 {
 	MsgBox, % "You clicked " event.target.innerText
 }
-
-Submit(neutron, event)
-{
-	; Some events have a default action that needs to be prevented. A form will
-	; redirect the page by default, but we want to handle the form data ourself.
-	event.preventDefault()
-
-	; Use Neutron's GetFormData method to process the form data into a form that
-	; is easily accessed. Fields that have a 'name' attribute will be keyed by
-	; that, or if they don't they'll be keyed by their 'id' attribute.
-	formData := neutron.GetFormData(event.target)
-
-	; You can access all of the form fields by iterating over the FormData
-	; object. It will go through them in the order they appear in the HTML.
-	out := "Access all fields by iterating:`n"
-	for name, value in formData
-		out .= name ": " value "`n"
-	out .= "`n"
-
-	; You can also get field values by name directly. Use object dot notation
-	; with the field name/id.
-	out .= "Or access individual fields directly:`n"
-	out .= "Email: " formData.inputEmail "`n"
-	out .= "Password: " formData.inputPassword "`n"
-	if formData.gridCheck
-		out .= "You checked the box!"
-	else
-		out .= "You didn't check the box."
-
-	; Show the output
-	MsgBox, %out%
-}
