@@ -13,14 +13,21 @@ ModifierKeys.Control := "Ctrl"
 ; ----------------------------------
 ; Razer Mouse Button Vars
 ; ----------------------------------
+MouseButton1 := "+F6"
+MouseButton2 := "/"
+MouseButton3 := "="
 
-RazerButton4 := "NumpadSub"
-RazerButton5 := "NumpadMult"
-RazerButton6 := "NumpadDiv"
+MouseButton4 := "k"
+MouseButton5 := "l"
+MouseButton6 := "\\"
 
-RazerButton7 := "NumpadSub"
-RazerButton8 := "NumpadSub"
-RazerButton9 := "NumpadSub"
+MouseButton7 := "7"
+MouseButton8 := "8"
+MouseButton9 := "9"
+
+MouseButton10 := "F6"
+MouseButton11 := "F7"
+MouseButton12 := "F8"
 
 
 ; ----------------------------------
