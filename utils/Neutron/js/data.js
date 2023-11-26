@@ -37,6 +37,7 @@ const pvm = [
         variable: "hybridProcess",
         magic: true,
         melee: true,
+        ranged: true,
         image: "images/melee.png",
         tooltip: "Naga Pro Key (11)",
     },
