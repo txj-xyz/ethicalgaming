@@ -13,22 +13,16 @@ Menu, Tray, Icon, %A_WorkingDir%\utils\Neutron\images\melee.png
 
 brid_helm := "F7"
 brid_body := "F8"
-brid_legs := "F4"
-brid_boots := "["
+brid_legs := "+F8"
+brid_boots := "+F7"
 brid_2h := "F6"
-brid_prayer := "Delete"
-
+brid_prayer := "+F6"
 
 ;
 ; Change the keybind below for the activation button;
 ; ----
-F22::HybridSwitch()
+F7::HybridSwitch()
 Return
-
-
-
-
-
 
 
 
