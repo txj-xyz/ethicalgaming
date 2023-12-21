@@ -20,7 +20,9 @@ brid_prayer := "+F6"
 
 ;
 ; Change the keybind below for the activation button;
-; ----
+; ------------------------------------------
+; Mouse button 11 (Razer Naga)
+; ------------------------------------------
 F7::HybridSwitch()
 Return
 
@@ -45,7 +47,7 @@ HybridSwitch(){
     Equip("brid_legs")
     Equip("brid_boots")
     Equip("brid_prayer")
-    Sleep, ran(1,30)
+    Sleep, 60
     Equip("brid_2h")
 }
 

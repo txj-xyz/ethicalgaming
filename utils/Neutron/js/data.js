@@ -21,6 +21,17 @@ const pvm = [
         tooltip: "Hammer Stall (CapsLock)<br>Hybrid Switch (11)<br>Auto -> Deto -> Gstaff(12)",
     },
     {
+        name: "AOD Necro Hammer",
+        type: "pvm",
+        filePath: scriptsDir + "/AOD/NecroHammer.ahk",
+        variable: "aodProcess",
+        magic: false,
+        melee: false,
+        necro: true,
+        image: "images/Nex_chathead.png",
+        tooltip: "Hammer Stall (CapsLock)<br>Hybrid Switch (11)<br>Auto -> Deto -> Gstaff(12)",
+    },
+    {
         name: "PvM 2:1 Rebinds",
         type: "pvm",
         filePath: scriptsDir + "PvM.ahk",

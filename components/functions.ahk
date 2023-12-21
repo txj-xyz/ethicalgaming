@@ -61,16 +61,6 @@ Hybrid(Keybind) {
     Send {%keybind% up}
 }
 
-; helm -> body -> legs -> boots -> prayer -> 2h
-HybridSwitch(){
-    Hybrid("brid_helm")
-    Hybrid("brid_body")
-    Hybrid("brid_legs")
-    ; Hybrid("brid_boots")
-    Hybrid("brid_prayer")
-    Sleep, ran(1,30)
-    Hybrid("brid_2h")
-}
 
 ; Function to concatenate array elements with a delimiter
 joinString(array, delimiter) {
