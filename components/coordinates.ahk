@@ -16,6 +16,11 @@ Coords.FamiliarSpec := Object("X1", 2634, "Y1", 1289, "X2", 2634, "Y2", 1289)
 Coords.Inventory_Windowed_125_scale := Object("X1", 2101, "Y1", 1072, "X2", 2393, "Y2", 1270)
 Coords.Prayer_Windowed_125_scale := Object("X1", 3175, "Y1", 458, "X2", 3387, "Y2", 756)
 Coords.RitualAltar := Object("X1", 1711, "Y1", 695, "X2", 1738, "Y2", 722)
+Coords.VestmentHood := Object("X1", 2231, "Y1", 1233, "X2", 2231, "Y2", 1233)
+Coords.VestmentBody := Object("X1", 2232, "Y1", 1269, "X2", 2232, "Y2", 1269)
+Coords.VestmentLegs := Object("X1", 2271, "Y1", 1234, "X2", 2271, "Y2", 1234)
+Coords.VestmentBoots := Object("X1", 2269, "Y1", 1269, "X2", 2269, "Y2", 1269)
+
 
 ; Summoning Coords for ControlClick
 global Shop := Object()
@@ -29,5 +34,4 @@ Shop.PouchFirst := Object("X1", 1085, "Y1", 539, "X2", 1085, "Y2", 539)
 Shop.PouchSecond := Object("X1", 1070, "Y1", 685, "X2", 1070, "Y2", 685)
 Shop.ShopSlot1 := Object("X1", 1158, "Y1", 787, "X2", 1158, "Y2", 787)
 Shop.ShopSlot2 := Object("X1", 1142, "Y1", 994, "X2", 1142, "Y2", 994)
-
 

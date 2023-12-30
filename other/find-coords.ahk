@@ -84,10 +84,9 @@ NOTE: Make sure you CLICK on the window you wish to be relative
 ; Right click + hold to select area.
 Q::
     coordinates := SelectArea("cLime t50 g99 mr")
-    ; TrayTip, Coordinates, Coordinates Copied to Clipboard, 20, 1
     TrayTip, Coordinates Copied to Clipboard, Object(%coordinates%), 20, 1
     clipboard := "Object(" . coordinates . ")"
-    ExitApp
+    ; ExitApp
 Return
 
 ; Escape to terminate the app.

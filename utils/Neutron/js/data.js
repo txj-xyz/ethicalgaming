@@ -53,6 +53,18 @@ const pvm = [
         tooltip: "Naga Pro Key (11)",
     },
     {
+        name: "Necro Vestment Clicker",
+        type: "pvm",
+        filePath: scriptsDir + "VestmentClicker.ahk",
+        variable: "hybridProcess",
+        magic: false,
+        melee: false,
+        ranged: false,
+        necro: true,
+        image: "images/melee.png",
+        tooltip: "(ALT + F7)<br>Game must be in fullscreen",
+    },
+    {
         name: "Vorago",
         type: "pvm",
         filePath: scriptsDir + "RagoHammerClimb.ahk",
